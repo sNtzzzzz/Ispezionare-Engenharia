@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Quicksand", sans-serif;
+}
+body {
+    min-height: 200vh;
+}
+@media screen and (max-width: 600px) {
+    .hero {
+        padding: 120px 1.5rem 2rem;
+        min-height: 75svh;
+    }
+
+    .restoTemporario h1 {
+        font-size: 2rem;
+    }
+
+    .restoTemporario h2 {
+        font-size: 1.125rem;
+    }
+}
+
+.hero {
+    box-sizing: border-box;
+    width: 100%;
+    aspect-ratio: 1672 / 941;
+    margin-top: -60px;
+    padding: 120px 5rem 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-image: url(../images/background.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center top;
+}
+.restoTemporario {
+    color: white;
+    min-width: 0;
+    overflow-wrap: break-word;
+}
+.restoTemporario h1 {
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+.yText {
+    color: #fafa1e;
+    font-weight: bold;
+    font-style: italic;
+}
+.restoTemporario h2 {
+    margin-top: 1rem;
+    width: 60rem;
+    font-weight: 400;
+    font-size: 1.375rem;
+    font-style: italic;
+    opacity: .8;
+}
+.getInTouch {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    background-color: #fafa1e;
+    justify-content: center;
+    width: 11rem;
+    border-radius: 1.5rem;
+    height: 3rem;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.1em;
+    color: inherit;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .2s;
+}
+.getInTouch:hover {
+    color: #fafa1e;
+    background-color: white;
+}

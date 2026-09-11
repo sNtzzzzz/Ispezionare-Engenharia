@@ -6,13 +6,12 @@
 
 body {
     min-height: 200vh;
-    background-image: url(../images/background.png);
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-position: center top;
 }
 
 .headerItens {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     display: grid;
     grid-template-columns: auto 1fr auto;
     grid-template-rows: minmax(0, 1fr);
