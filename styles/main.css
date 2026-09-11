@@ -16,21 +16,25 @@ body {
     display: grid;
     grid-template-columns: auto 1fr auto;
     grid-template-rows: minmax(0, 1fr);
-    height: 70px;
+    height: 60px;
     background: linear-gradient(to bottom, rgb(0 0 0 / 25%), rgb(0 0 0 / 0%));
     color: white;
 }
 .headerItens .logo {
     display: flex;
-    padding-left: 1.4rem;
+    padding-left: 3rem;
     align-items: center;
+    height: 110%;
+}
+.logoHeader {
+    display: block;
     height: 100%;
+    width: auto;
 }
 .headerItens .icons {
     display: flex;
     justify-self: center;
     align-items: stretch;
-    gap: 0.25rem;
     padding: 0.25rem;
     box-sizing: border-box;
     background-color: rgb(0 0 0 / 60%);
@@ -39,33 +43,48 @@ body {
     margin: 0.25rem;
     font-size: 10px;
 }
-.headerItens .contact {
-    display: flex;
-    justify-content: right;
-    padding-right: 8rem;
-    align-items: center;
-}
-.logoHeader {
-    display: block;
-    height: 100%;
-    width: auto;
-}
 .iconsText {
     display: flex;
     flex: 1;
     align-items: center;
     justify-content: center;
     font-family: "Quicksand", sans-serif;
-    font-size: 2em;
+    font-size: 1.7em;
     color: inherit;
     text-decoration: none;
     border-radius: 3.5rem;
     transition: 0.2s;
     cursor: pointer;
 }
-
 .iconsText:hover{
     background-color: white;
     color: black;
     transition: 0.2s;
+}
+.headerItens .contact {
+    display: flex;
+    justify-content: right;
+    padding: .25rem;
+    padding-right: 2rem;
+    align-items: center;
+}
+.waMe {
+    display: flex;
+    align-items: center;
+    background-color: #fafa1e;
+    justify-content: center;
+    width: 11rem;
+    border-radius: 1.2rem;
+    margin: .25rem;
+    height: 100%;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.4em;
+    color: inherit;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .2s;
+}
+.waMe:hover {
+    color: #fafa1e;
+    background-color: white;
 }
