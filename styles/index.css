@@ -62,7 +62,7 @@ body {
     display: flex;
     align-items: center;
     margin-top: 1rem;
-    background-color: #fafa1e;
+    background-color: #ecbe13;
     justify-content: center;
     width: 11rem;
     border-radius: 1.5rem;
@@ -75,6 +75,6 @@ body {
     transition: .2s;
 }
 .getInTouch:hover {
-    color: #fafa1e;
+    color: #ecbe13;
     background-color: white;
 }

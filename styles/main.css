@@ -3,7 +3,6 @@
     padding: 0;
     margin: 0;
 }
-
 body {
     min-height: 200vh;
 }
@@ -15,7 +14,7 @@ body {
     display: grid;
     grid-template-columns: auto 1fr auto;
     grid-template-rows: minmax(0, 1fr);
-    height: 60px;
+    height: 3.35rem;
     background: linear-gradient(to bottom, rgb(0 0 0 / 25%), rgb(0 0 0 / 0%));
     color: white;
 }
@@ -70,20 +69,44 @@ body {
 .waMe {
     display: flex;
     align-items: center;
-    background-color: #fafa1e;
     justify-content: center;
-    width: 11rem;
-    border-radius: 1.2rem;
+    gap: .3rem;
+    box-sizing: border-box;
+    padding: .25rem;
+    padding-left: 0.8rem;
+    background-color: #ecbe13;
+    border-radius: 1.4rem;
     margin: .25rem;
     height: 100%;
     font-family: "Quicksand", sans-serif;
     font-size: 1.4em;
     color: inherit;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 550;
     transition: .2s;
 }
-.waMe:hover {
-    color: #fafa1e;
+.waMeText,
+.waMeArrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    transition: .2s;
+    font-size: 1.1rem;
+}
+.waMeArrow {
+    aspect-ratio: 1;
+    flex-shrink: 0;
+    border-radius: 50%;
+    color: #ecbe13;
     background-color: white;
+}
+.waMe:hover{
+    color: #ecbe13;
+    background-color: white;
+}
+.waMe:hover .waMeArrow,
+.waMe:focus-visible .waMeArrow {
+    color: white;
+    background-color: #ecbe13;
 }
