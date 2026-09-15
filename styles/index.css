@@ -5,31 +5,29 @@
     font-family: "Quicksand", sans-serif;
 }
 body {
-    min-height: 200vh;
+    min-height: 100vh;
+    background-color: #f7f7f5;
+    color: #242424;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     .hero {
         padding: 120px 1.5rem 2rem;
         min-height: 75svh;
     }
-
     .mainPart h1 {
         font-size: 2rem;
     }
-
     .mainPart h2 {
         font-size: 1.125rem;
     }
-}
-@media (max-width: 700px) {
-    .problema, .problemsLinha:nth-child(even) .problema { 
+    .problem, .problemsLinha:nth-child(even) .problem { 
         width: 100%; 
         flex-direction: column; }
     .problemsImg { 
         flex-basis: auto; 
         width: 100%; 
         min-height: 280px; }
-    .problema-descricao { 
+    .problemDescription { 
         flex-basis: auto; 
         width: 100%; 
     }
@@ -115,7 +113,7 @@ body {
     text-decoration: none;
 }
 .services {
-    background-color: rgb(0 0 0 /3%);
+    background-color: #f7f7f5;
     padding-bottom: 2rem;
 }
 .servicesSquares {
@@ -128,13 +126,15 @@ body {
     padding: .75rem;
     overflow-wrap: break-word;
     border-radius: .8rem;
-    border: .15rem solid #ecbe13;
+    border: .15rem solid #deded9;
     background-color: white;
+    box-shadow: 0 6px 20px rgb(36 36 36 / 5%);
     transition: .2s;
     cursor: pointer;
 }
 .squares:hover {
     transform: scale(1.012);
+    border-color: #ecbe13;
 }
 .squares h3 {
     padding-top: 1rem;
@@ -152,9 +152,9 @@ body {
 
 /* Cards */
 .problems {
-    padding: clamp(3rem, 6vw, 6rem) clamp(1.25rem, 5vw, 5rem);
+    padding: clamp(3rem, 2vw, 6rem) clamp(1.25rem, 4vw, 5rem);
     color: #242424;
-    background-color: #f2e4ce;
+    background-color: #e9e9e5;
 }
 .problemsHeader, .problemsLista { 
     max-width: 1120px; 
@@ -186,20 +186,24 @@ body {
 .problemsLinha { 
     container-type: inline-size; 
 }
-.problema { 
+.problem { 
     display: flex; 
     width: 50%; 
     overflow: hidden; 
     border-radius: .8rem; 
-    background: #f5f4ef; 
-    transition: width .45s ease; 
+    background: #ffffff;
+    --sombra-direcao: 18px;
+    box-shadow: var(--sombra-direcao) 0 18px -14px rgb(0 0 0 / 0%);
+    transition: width .45s ease, box-shadow .45s ease;
 }
-.problemsLinha:nth-child(even) .problema { 
+.problemsLinha:nth-child(even) .problem { 
+    --sombra-direcao: -18px;
     margin-left: auto; 
     flex-direction: row-reverse; 
 }
-.problema.ativo { 
+.problem.ativo { 
     width: 100%; 
+    box-shadow: var(--sombra-direcao) 0 18px -14px rgb(0 0 0 / 28%);
 }
 .problemsImg { 
     position: relative; 
@@ -210,7 +214,9 @@ body {
     color: white; 
     text-align: left; 
     cursor: pointer; 
-    overflow: hidden; 
+    overflow: hidden;
+    border: 1px solid black;
+    border-radius: 13px; 
 }
 .problemsImg img { 
     position: absolute; 
@@ -225,17 +231,17 @@ body {
     inset: 0; 
     background: linear-gradient(180deg, rgb(0 0 0 / 35%), transparent 35%, rgb(0 0 0 / 85%)); 
 }
-.problema-numero, .problema-titulo, .problema-icone { 
+.problemNumber, .problemTitle, .problemIcon { 
     position: absolute; 
     z-index: 1; 
 }
-.problema-numero { 
+.problemNumber { 
     top: 1.5rem; 
     left: 1.5rem; 
     font-size: .85rem; 
     font-weight: 600; 
 }
-.problema-titulo { 
+.problemTitle { 
     bottom: 1.75rem; 
     left: 1.5rem; 
     right: 5rem; 
@@ -243,7 +249,7 @@ body {
     font-weight: 600; 
     line-height: 1.2; 
 }
-.problema-icone { 
+.problemIcon { 
     bottom: 1.5rem; 
     right: 1.5rem; 
     display: grid; 
@@ -256,10 +262,10 @@ body {
     font-size: 1.8rem; 
     transition: transform .3s ease; 
 }
-.problema.ativo .problema-icone { 
+.problem.ativo .problemIcon { 
     transform: rotate(45deg); 
 }
-.problema-descricao { 
+.problemDescription { 
     box-sizing: border-box; 
     flex: 0 0 50cqw; 
     padding: clamp(1.5rem, 3vw, 3rem); 
@@ -269,15 +275,92 @@ body {
     gap: 1rem; 
     line-height: 1.7; 
 }
-.problema-descricao[hidden] { 
+.problemDescription[hidden] { 
     display: none; 
 }
-.problema-descricao h3 { 
+.problemDescription h3 { 
     font-size: 1.3rem; 
     line-height: 1.35; 
 }
-.problema-descricao a { 
+.problemDescription a { 
     color: #242424; 
-    font-weight: 700; 
+    font-weight: 700;
     text-underline-offset: .3em; 
+}
+
+/* footer */
+
+.siteFooter {
+    padding: 3rem clamp(1.25rem, 4vw, 5rem) 1.5rem;
+    background-color: #242424;
+    color: #f5f4ef;
+    border-top: 3px solid #ecbe13;
+}
+.footerContent {
+    display: grid;
+    grid-template-columns: 1.3fr .7fr 1fr;
+    gap: 2.5rem;
+    max-width: 1120px;
+    margin-inline: auto;
+}
+.footerContent > * {
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+.footerBrand img {
+    display: block;
+    width: 220px;
+    max-width: 100%;
+    height: auto;
+}
+.footerBrand p {
+    max-width: 280px;
+    margin-top: 1rem;
+    color: #d4d0c8;
+    line-height: 1.7;
+}
+.siteFooter h2 {
+    margin-bottom: 1rem;
+    color: #ecbe13;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.footerLinks, .footerContact address {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .65rem;
+    font-style: normal;
+    line-height: 1.6;
+}
+.footerLinks h2 {
+    margin-bottom: .35rem;
+}
+.footerContact > a {
+    display: inline-block;
+    margin-top: .65rem;
+    line-height: 1.6;
+}
+.siteFooter a {
+    color: inherit;
+    text-decoration: none;
+    text-underline-offset: .25em;
+}
+.siteFooter a:hover {
+    color: #ecbe13;
+    text-decoration: underline;
+}
+.siteFooter a:focus-visible {
+    outline: 2px solid #ecbe13;
+    outline-offset: 5px;
+    border-radius: 2px;
+}
+.footerBottom {
+    max-width: 1120px;
+    margin: 2.5rem auto 0;
+    padding-top: 1.25rem;
+    border-top: 1px solid rgb(255 255 255 / 18%);
+    color: #d4d0c8;
+    font-size: .85rem;
+    line-height: 1.6;
 }

@@ -1,8 +1,8 @@
 const hoverDisponivel = window.matchMedia('(hover: hover) and (pointer: fine)');
 
-document.querySelectorAll('.problema').forEach((card) => {
+document.querySelectorAll('.problem').forEach((card) => {
     const botao = card.querySelector('.problemsImg');
-    const descricao = card.querySelector('.problema-descricao');
+    const descricao = card.querySelector('.problemDescription');
     let fixado = false;
 
     function mostrar(aberto) {
