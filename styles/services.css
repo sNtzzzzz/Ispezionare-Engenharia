@@ -18,6 +18,8 @@ body {
 .initialContainerServices {
     height: 45rem;
     margin-top: -60px;
+    background-image: url(../images/backgroundServices.png);
+    background-position: cover;
 }
 .initialContentServices {
     padding-top: 140px;
@@ -35,7 +37,7 @@ body {
     margin-left: -.3rem;
 }
 .initialContentServices > p:last-child {
-    padding-top: .8rem;
+    padding-top: 2rem;
     font-size: 1.6rem;
     color: #474747;
 }
