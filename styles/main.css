@@ -15,6 +15,11 @@ body > * {
 
 /*  Header  */
 
+.headerItens,
+.headerItens * {
+    font-family: "Quicksand", sans-serif;
+}
+
 .headerItens {
     position: sticky;
     top: 0;

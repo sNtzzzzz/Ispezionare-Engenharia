@@ -44,7 +44,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    background-image: url(../images/background.png);
+    background-image: url(../images/images-index/background.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
