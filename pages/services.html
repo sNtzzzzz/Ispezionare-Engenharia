@@ -3,29 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ispezionare Engenharia</title>
+    <title>Serviços | Ispezionare Engenharia</title>
     <link rel="stylesheet" href="../styles/main.css">
     <link rel="stylesheet" href="../styles/services.css">
     <link rel="icon" type="image/png" class="icon" href="../images/images/icon.png?v=2">
 </head>
 <body>
-    <div class="headerItens">
+    <a class="skipLink" href="#conteudo">Pular para o conteúdo</a>
+    <header class="headerItens">
         <div class="logo">
-            <img src="../images/images/logoHeaderB.png" class="logoHeader">
+            <a href="../index.html" aria-label="Ispezionare Engenharia — início"><img src="../images/images/logoHeaderB.png" class="logoHeader" alt="Ispezionare Engenharia"></a>
         </div>
-        <div class="icons">
+        <nav class="icons" aria-label="Navegação principal">
             <a href="../index.html" class="iconsText home">Home</a>
             <a href="aboutUs.html" class="iconsText sobreNos">Sobre Nós</a>
             <a href="projects.html" class="iconsText projetos">Projetos</a>
-            <a href="services.html" class="iconsText servicos">Serviços</a>
-        </div>
+            <a href="services.html" class="iconsText servicos" aria-current="page">Serviços</a>
+        </nav>
         <div class="contact">
-            <a href="https://wa.me/message/LAXNS5ODI656J1" class="waMe" target="_blank">
+            <a href="https://wa.me/message/LAXNS5ODI656J1" class="waMe" target="_blank" rel="noopener noreferrer">
                 <span class="waMeText">Fale Conosco</span>
                 <span class="waMeArrow" aria-hidden="true">↗</span>
             </a>
         </div>
-    </div>
+    </header>
+
+    <main id="conteudo">
 
     <!--  apresentação  -->
 
@@ -42,11 +45,11 @@
             </div>
             <div class="firstIdeas">
                 <img src="../images/images-services/paper.png" alt="">
-                <p>Análises técnicas <br>com base na norma.</p>
+                <p>Análises fundamentadas em normas e critérios técnicos.</p>
             </div>
             <div class="firstIdeas">
                 <img src="../images/images-services/people.png" alt="">
-                <p>Atendimento a <br>pessoas fisicas e jurídicas.</p>
+                <p>Atendimento a <br>pessoas físicas e jurídicas.</p>
             </div>
         </div>
     </div>
@@ -60,61 +63,280 @@
         <div class="servicesContent">
             <div class="serviceVistoria">
                 <div class="serviceTitle">
-                    <h1><span class="yText">01 ―</span> Inspeções e Vistorias Técnicas</h1>
-                    <p class="serviceTitleDesc">Avaliação das condições do imóvel e identificação de anomalias.</p>
+                    <h2><span class="yText">01 ―</span> Inspeções e Vistorias Técnicas</h2>
+                    <p class="serviceTitleDesc">Avaliação técnica do imóvel para identificação de anomalias e condições de conservação.</p>
+                    <p class="serviceKeywords">Imóveis · Condomínios · Reformas · Estruturas · Fachadas</p>
                 </div>
                 <div class="serviceDesc">
                     <div class="descImg">
-                        <img src="../images/images-services/inspetor.png" alt="">
+                        <img src="../images/images-services/firstService.jpg" alt="Medição de uma trinca em parede com fissurômetro." loading="lazy">
+                        <p class="serviceImageCaption">Olhar técnico<br>para mais<br>tranquilidade</p>
                     </div>
                     <div class="descriptions">
                         <div class="descDesc">
                             <div class="descDescImg">
-                                <img src="../images/images-services/foia.png">
+                                <img src="../images/images-services/foia.png" alt="" loading="lazy">
                             </div>
                             <div class="descDescTxt">
-                                <p> É uma avaliação técnica das condições do imóvel, com identificação de anomalias, sinais de desgate e possíveis riscos. A inspeção considera os sistemas construtivos, elementos aparentes e o uso do imóvel, sempre com base em normas técnicas aplicáveis.</p>
+                                <h3>O que é?</h3>
+                                <p class="lastP">Avaliação das condições da edificação para identificar falhas, anomalias e sinais de degradação, considerando os sistemas construtivos e, quando aplicável, documentos e normas técnicas.</p>
                             </div>
                         </div>
                         <div class="descDesc">
                             <div class="descDescImg">
-                                <img src="../images/images-services/lupa.png">
+                                <img src="../images/images-services/lupa.png" alt="" loading="lazy">
                             </div>
                             <div class="descDescTxt">
-                                <p>Ao comprar, vender ou alugar um imóvel, em caso de reformas, quando notar sinais de problemas (como trincas, infiltrações e deslocamentos) ou simplismente para conhecer melhor o estado de conservação do seu patrimonio.</p>
+                                <h3>Quando procurar?</h3>
+                                <p>Na compra ou entrega de imóveis, antes ou após reformas ou ao identificar trincas, infiltrações, desprendimentos e outras manifestações anômalas.</p>
                             </div>
                         </div>
                         <div class="descDesc">
                             <div class="descDescImg">
-                                <img src="../images/images-services/prancheta.png">
+                                <img src="../images/images-services/prancheta.png" alt="" loading="lazy">
                             </div>
                             <div class="descDescTxt">
-                                <p>Relatório técnico com os achados da inspeção, registro fotográfico, descrião das anomalias e, quando aplicável, recomendações de açoes corretivas.</p>
-                                <p class="descObs">Os itens entregues podem variar conforme o escopo contratado.</p>
+                                <h3>O que o cliente recebe?</h3>
+                                <p class="lastP">Relatório ou laudo técnico com registros fotográficos, anomalias identificadas e orientações técnicas, conforme o escopo contratado.</p>
                             </div>
                         </div>
                     </div>
                 </div>
+                <a class="serviceContact textLink" href="https://wa.me/message/LAXNS5ODI656J1" target="_blank" rel="noopener noreferrer">Precisa avaliar uma situação semelhante? Fale com nossa equipe técnica ↗</a>
+            </div>
+            <div class="serviceVistoria">
+                <div class="serviceTitle">
+                    <h2><span class="yText">02 ―</span> Diagnóstico de Patologias Construtivas</h2>
+                    <p class="serviceTitleDesc">Investigação das causas e mecanismos relacionados às manifestações patológicas da edificação.</p>
+                    <p class="serviceKeywords">Umidade e infiltrações · Fissuras e trincas · Estruturas · Fachadas · Impermeabilização</p>
+                </div>
+                <div class="serviceDesc">
+                    <div class="descriptions">
+                        <div class="descDesc">
+                            <div class="descDescImg">
+                                <img src="../images/images-services/foia.png" alt="" loading="lazy">
+                            </div>
+                            <div class="descDescTxt">
+                                <h3>O que é?</h3>
+                                <p class="lastP">Investigação técnica para identificar as possíveis causas de infiltrações, umidade, fissuras, trincas, destacamentos e outras anomalias, podendo incluir ensaios específicos.</p>
+                            </div>
+                        </div>
+                        <div class="descDesc">
+                            <div class="descDescImg">
+                                <img src="../images/images-services/lupa.png" alt="" loading="lazy">
+                            </div>
+                            <div class="descDescTxt">
+                                <h3>Quando procurar?</h3>
+                                <p class="lastP">Quando o problema é recorrente, reparos anteriores não funcionaram ou é necessário compreender sua origem antes de intervir.</p>
+                            </div>
+                        </div>
+                        <div class="descDesc">
+                            <div class="descDescImg">
+                                <img src="../images/images-services/prancheta.png" alt="" loading="lazy">
+                            </div>
+                            <div class="descDescTxt">
+                                <h3>O que o cliente recebe?</h3>
+                                <p class="lastP">Laudo técnico com caracterização das manifestações, análise das possíveis causas, registros dos ensaios e conclusões da investigação.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="descImg">
+                        <img src="../images/images-services/secondService.jpg" alt="Câmera termográfica utilizada na investigação de uma parede em garagem." loading="lazy">
+                        <p class="serviceImageCaption">Entender a origem.<br>Orientar a solução.</p>
+                    </div>
+                </div>
+                <a class="serviceContact textLink" href="https://wa.me/message/LAXNS5ODI656J1" target="_blank" rel="noopener noreferrer">Precisa avaliar uma situação semelhante? Fale com nossa equipe técnica ↗</a>
+            </div>
+            <div class="serviceVistoria">
+                <div class="serviceTitle">
+                    <h2><span class="yText">03 ―</span> Recebimento de Imóveis e Áreas Comuns</h2>
+                    <p class="serviceTitleDesc">Verificação técnica de unidades e áreas comuns antes ou durante o recebimento do empreendimento.</p>
+                    <p class="serviceKeywords">Unidades privativas · Áreas comuns · Acabamentos · Instalações · Sistemas construtivos</p>
+                </div>
+                <div class="serviceDesc">
+                    <div class="descImg">
+                        <img src="../images/images-services/thirdService.jpg" alt="Interior de unidade residencial com acabamentos e instalações aparentes." loading="lazy">
+                        <p class="serviceImageCaption">Mais segurança<br>em cada entrega.</p>
+                    </div>
+                    <div class="descriptions">
+                        <div class="descDesc">
+                            <div class="descDescImg">
+                                <img src="../images/images-services/foia.png" alt="" loading="lazy">
+                            </div>
+                            <div class="descDescTxt">
+                                <h3>O que é?</h3>
+                                <p class="lastP">Vistoria destinada a identificar falhas aparentes, não conformidades e divergências em relação aos documentos técnicos e itens contratados.</p>
+                            </div>
+                        </div>
+                        <div class="descDesc">
+                            <div class="descDescImg">
+                                <img src="../images/images-services/lupa.png" alt="" loading="lazy">
+                            </div>
+                            <div class="descDescTxt">
+                                <h3>Quando procurar?</h3>
+                                <p>Antes da entrega das chaves, no recebimento de unidades novas, áreas comuns ou durante o período de garantia.</p>
+                            </div>
+                        </div>
+                        <div class="descDesc">
+                            <div class="descDescImg">
+                                <img src="../images/images-services/prancheta.png" alt="" loading="lazy">
+                            </div>
+                            <div class="descDescTxt">
+                                <h3>O que o cliente recebe?</h3>
+                                <p class="lastP">Relatório técnico com registros fotográficos, itens vistoriados e apontamentos das não conformidades identificadas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="serviceContact textLink" href="https://wa.me/message/LAXNS5ODI656J1" target="_blank" rel="noopener noreferrer">Precisa avaliar uma situação semelhante? Fale com nossa equipe técnica ↗</a>
+            </div>
+            <div class="serviceVistoria">
+                <div class="serviceTitle">
+                    <h2><span class="yText">04 ―</span> Perícias e Assistência Técnica</h2>
+                    <p class="serviceTitleDesc">Atuação técnica em demandas judiciais e extrajudiciais relacionadas à engenharia civil.</p>
+                    <p class="serviceKeywords">Vícios construtivos · Danos a imóveis · Reformas · Infiltrações · Estruturas · Divergências técnicas</p>
+                </div>
+                <div class="serviceDesc">
+                    <div class="descriptions">
+                        <div class="descDesc">
+                            <div class="descDescImg">
+                                <img src="../images/images-services/foia.png" alt="" loading="lazy">
+                            </div>
+                            <div class="descDescTxt">
+                                <h3>O que é?</h3>
+                                <p class="lastP">Análise técnica de questões envolvendo vícios construtivos, danos, falhas de execução, reformas, infiltrações, estruturas e outros conflitos técnicos.</p>
+                            </div>
+                        </div>
+                        <div class="descDesc">
+                            <div class="descDescImg">
+                                <img src="../images/images-services/lupa.png" alt="" loading="lazy">
+                            </div>
+                            <div class="descDescTxt">
+                                <h3>Quando procurar?</h3>
+                                <p class="lastP">Em processos judiciais, perícias, conflitos técnicos ou situações que exijam fundamentação especializada em engenharia.</p>
+                            </div>
+                        </div>
+                        <div class="descDesc">
+                            <div class="descDescImg">
+                                <img src="../images/images-services/prancheta.png" alt="" loading="lazy">
+                            </div>
+                            <div class="descDescTxt">
+                                <h3>O que o cliente recebe?</h3>
+                                <p class="lastP">Análise documental e técnica, acompanhamento de perícias e elaboração de pareceres, quesitos e manifestações técnicas, conforme o escopo contratado.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="descImg">
+                        <img src="../images/images-index/squareTwo_img.png" alt="Documentos organizados sobre uma mesa com lupa." loading="lazy">
+                        <p class="serviceImageCaption">Clareza técnica<br>para decisões<br>fundamentadas.</p>
+                    </div>
+                </div>
+                <a class="serviceContact textLink" href="https://wa.me/message/LAXNS5ODI656J1" target="_blank" rel="noopener noreferrer">Precisa avaliar uma situação semelhante? Fale com nossa equipe técnica ↗</a>
             </div>
         </div>
     </div>
+
+
+    <section class="servicesSection methodologySection" aria-labelledby="como-atuamos">
+        <div class="sectionInner">
+            <header class="sectionHeading">
+                <p class="sectionEyebrow">Método e investigação</p>
+                <h2 id="como-atuamos">Como atuamos</h2>
+                <p>Cada demanda é analisada de forma individual, considerando as características da edificação, o histórico da ocorrência e o objetivo da contratação.</p>
+            </header>
+            <ol class="methodSteps">
+                <li><span class="stepNumber" aria-hidden="true">01</span><h3>Análise da demanda</h3><p>Compreensão do problema, objetivo da contratação e documentação disponível.</p></li>
+                <li><span class="stepNumber" aria-hidden="true">02</span><h3>Vistoria e investigação técnica</h3><p>Avaliação em campo, registros e ensaios conforme a necessidade de cada caso.</p></li>
+                <li><span class="stepNumber" aria-hidden="true">03</span><h3>Análise técnica</h3><p>Interpretação das evidências, documentos, projetos, normas e demais elementos aplicáveis.</p></li>
+                <li><span class="stepNumber" aria-hidden="true">04</span><h3>Conclusões e orientação</h3><p>Consolidação dos resultados em relatório, laudo, parecer ou manifestação técnica.</p></li>
+            </ol>
+        </div>
+    </section>
+
+    <section class="servicesSection" aria-labelledby="para-quem">
+        <div class="sectionInner">
+            <header class="sectionHeading"><p class="sectionEyebrow">Contextos de atuação</p><h2 id="para-quem">Para quem atuamos</h2></header>
+            <div class="audienceGrid">
+                <article><h3>Condomínios</h3><p>Inspeções, diagnósticos, recebimento de áreas comuns, análise de garantias e suporte técnico em conflitos construtivos.</p></article>
+                <article><h3>Construtoras e incorporadoras</h3><p>Inspeções, vistorias, recebimento de obras, análises técnicas e suporte especializado.</p></article>
+                <article><h3>Proprietários e unidades privativas</h3><p>Avaliação de imóveis, patologias construtivas, reformas, recebimento de unidades e conflitos técnicos.</p></article>
+            </div>
+        </div>
+    </section>
+
+    <section class="servicesSection evidenceSection" aria-labelledby="evidencias">
+        <div class="sectionInner evidenceLayout">
+            <header class="sectionHeading">
+                <p class="sectionEyebrow">Critério em cada análise</p>
+                <h2 id="evidencias">Engenharia orientada por evidências</h2>
+                <p>A análise técnica é desenvolvida a partir das condições observadas, registros de campo, documentação disponível e critérios técnicos aplicáveis a cada situação.</p>
+            </header>
+            <ul class="evidenceList">
+                <li>Análise técnica independente</li>
+                <li>Registro e rastreabilidade das constatações</li>
+                <li>Fundamentação em normas e critérios técnicos</li>
+                <li>Investigação compatível com cada manifestação</li>
+                <li>Comunicação técnica objetiva</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="servicesSection" aria-labelledby="projetos-relacionados">
+        <div class="sectionInner">
+            <header class="sectionHeading"><p class="sectionEyebrow">Aplicações dos serviços</p><h2 id="projetos-relacionados">Projetos relacionados</h2></header>
+            <div class="relatedProjects">
+                <a class="relatedProject" href="projects.html"><img src="../images/images-services/firstService.jpg" alt="Medição de uma trinca em parede com fissurômetro." loading="lazy"><h3>Inspeção especializada de estrutura</h3><span class="projectLink">Conheça os projetos <span aria-hidden="true">↗</span></span></a>
+                <a class="relatedProject" href="projects.html"><img src="../images/images-services/secondService.jpg" alt="Câmera termográfica utilizada na investigação de uma parede em garagem." loading="lazy"><h3>Investigação de umidade e estanqueidade</h3><span class="projectLink">Conheça os projetos <span aria-hidden="true">↗</span></span></a>
+                <a class="relatedProject" href="projects.html"><img src="../images/images-index/squareTwo_img.png" alt="Documentos organizados sobre uma mesa com lupa." loading="lazy"><h3>Assistência técnica em perícia de engenharia</h3><span class="projectLink">Conheça os projetos <span aria-hidden="true">↗</span></span></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="experienceSection" aria-labelledby="experiencia">
+        <div class="sectionInner experienceLayout">
+            <h2 id="experiencia">Experiência aplicada à Engenharia Diagnóstica</h2>
+            <p>Atuação técnica em inspeções, patologias construtivas, recebimento de obras, perícias e assistência técnica, com foco na análise criteriosa das evidências e na clareza das conclusões.</p>
+        </div>
+    </section>
+
+    <section class="servicesSection" aria-labelledby="perguntas-frequentes">
+        <div class="sectionInner faqLayout">
+            <header class="sectionHeading"><p class="sectionEyebrow">Sobre a contratação</p><h2 id="perguntas-frequentes">Perguntas frequentes</h2></header>
+            <div class="serviceFaq">
+                <details><summary>Todo serviço gera um laudo técnico?</summary><p>O documento emitido depende do objetivo e do escopo da contratação. O serviço pode resultar em relatório, laudo, parecer ou manifestação técnica.</p></details>
+                <details><summary>Os serviços podem incluir ensaios?</summary><p>Sim. Quando necessários à investigação, podem ser empregados ensaios e instrumentos específicos, definidos conforme as características da ocorrência.</p></details>
+                <details><summary>Quais documentos podem ser necessários?</summary><p>Projetos, memoriais, manuais, registros de manutenção, documentos de reforma e outros elementos podem contribuir para a análise, conforme o tipo de serviço.</p></details>
+                <details><summary>A Ispezionare atende condomínios e unidades privativas?</summary><p>Sim. A atuação contempla condomínios, construtoras, incorporadoras, proprietários e unidades privativas, conforme a natureza da demanda.</p></details>
+                <details><summary>A vistoria pode ser utilizada em processo judicial?</summary><p>Quando a demanda estiver relacionada a processo judicial ou conflito técnico, o escopo deve ser definido especificamente para essa finalidade.</p></details>
+            </div>
+        </div>
+    </section>
+
+    <section class="finalContact" aria-labelledby="avaliacao-independente">
+        <div class="sectionInner">
+            <p class="sectionEyebrow">Segurança para decidir</p>
+            <h2 id="avaliacao-independente">Conte com uma avaliação técnica independente para compreender o cenário antes de decidir como intervir.</h2>
+            <a class="textLink" href="https://wa.me/message/LAXNS5ODI656J1" target="_blank" rel="noopener noreferrer">Fale com a Ispezionare ↗</a>
+        </div>
+    </section>
+    </main>
 
     <!--  Footer  -->
 
     <footer class="siteFooter">
         <div class="footerContent">
             <div class="footerBrand">
-                <a href="index.html" aria-label="Ispezionare Engenharia — início">
+                <a href="../index.html" aria-label="Ispezionare Engenharia — início">
                     <img src="../images/images/logoHeader.png" alt="Ispezionare Engenharia" loading="lazy">
                 </a>
                 <p>Diagnósticos precisos para decisões mais seguras.</p>
             </div>
             <nav class="footerLinks" aria-label="Navegação do rodapé">
                 <h2>Explore</h2>
-                <a href="index.html" aria-current="page">Home</a>
-                <a href="pages/aboutUs.html">Sobre nós</a>
-                <a href="pages/projects.html">Projetos</a>
-                <a href="pages/services.html">Serviços</a>
+                <a href="../index.html">Home</a>
+                <a href="aboutUs.html">Sobre nós</a>
+                <a href="projects.html">Projetos</a>
+                <a href="services.html" aria-current="page">Serviços</a>
             </nav>
             <div class="footerContact">
                 <h2>Contato</h2>
