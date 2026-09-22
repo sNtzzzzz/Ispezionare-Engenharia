@@ -3,72 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ispezionare Engenharia</title>
+    <title>Ispezionare | Engenharia Diagnóstica, Inspeções e Perícias</title>
+    <meta name="description" content="Engenharia Diagnóstica, inspeções, perícias de engenharia e investigação de patologias construtivas para condomínios, construtoras e unidades privativas.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="Ispezionare Engenharia">
+    <meta property="og:title" content="Ispezionare | Engenharia Diagnóstica, Inspeções e Perícias">
+    <meta property="og:description" content="Diagnósticos precisos para decisões mais seguras. Conheça nossa atuação em Engenharia Diagnóstica, inspeções e perícias.">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/index.css">
     <link rel="icon" type="image/png" href="images/images/icon.png?v=2">
 </head>
-<body>
-    <div class="headerItens">
+<body class="homePage">
+    <a class="homeSkip" href="#conteudo">Pular para o conteúdo</a>
+    <header class="headerItens">
         <div class="logo">
             <img src="images/images/logoHeader.png" class="logoHeader" alt="Ispezionare Engenharia">
         </div>
-        <div class="icons">
+        <nav class="icons" aria-label="Navegação principal">
             <a href="index.html" class="iconsText" aria-current="page">Home</a>
             <a href="pages/aboutUs.html" class="iconsText">Sobre Nós</a>
             <a href="pages/projects.html" class="iconsText">Projetos</a>
             <a href="pages/services.html" class="iconsText">Serviços</a>
-        </div>
+        </nav>
         <div class="contact">
-            <a href="https://wa.me/message/LAXNS5ODI656J1" class="waMe" target= "_blank">
+            <a href="https://wa.me/message/LAXNS5ODI656J1" class="waMe" target="_blank" rel="noopener noreferrer">
                 <span class="waMeText">Fale Conosco</span>
                 <span class="waMeArrow" aria-hidden="true">↗</span>
             </a>
         </div>
-    </div>
+    </header>
 
-    <section class="hero">
-    <div class="mainPart">
-        <h1>Diagnósticos <span class="yText">precisos</span> para decisões <span class="yText">mais seguras</span>.</h1>
-        <h2>A Ispezionare Engenharia atua em Engenharia Diagnóstica, oferecendo análises técnicas precisas para identificar falhas, compreender causas e orientar decisões com segurança.</h2>
-        <a href="pages/aboutUs.html" class="getInTouch">Conheça a gente!</a>
+    <main id="conteudo" tabindex="-1">
+    <section class="hero" aria-labelledby="home-title">
+    <div class="mainPart homeContainer">
+        <p class="homeEyebrow">Inspeções e perícias de engenharia</p>
+        <h1 id="home-title">Diagnósticos <span class="yText">precisos</span> para decisões <span class="yText">mais seguras</span>.</h1>
+        <p class="heroDescription">A Ispezionare atua em Engenharia Diagnóstica, com inspeções, perícias e avaliações técnicas destinadas à identificação de anomalias, investigação de causas e suporte à tomada de decisões em edificações.</p>
+        <div class="homeActions">
+            <a href="https://wa.me/message/LAXNS5ODI656J1" class="homeButton" target="_blank" rel="noopener noreferrer">Solicite uma proposta <span aria-hidden="true">↗</span></a>
+            <a href="pages/services.html" class="homeTextLink">Conheça nossa atuação <span aria-hidden="true">↗</span></a>
+        </div>
     </div>
     </section>
-    <div class="services">
-        <div class="servicesHead">
-            <h1>Nossos serviços</h1>
-            <h2><span class="yText">Precisão</span> no diagnóstico.<br> <span class="yText">Segurança</span> em cada solução.</h2>
+
+    <div class="homeCredentials">
+        <ul class="homeContainer">
+            <li><strong>+20 anos</strong> de atuação na construção civil</li>
+            <li>Engenharia Diagnóstica</li>
+            <li>Atuação judicial e extrajudicial</li>
+            <li>São Paulo · ABC · Litoral</li>
+        </ul>
+    </div>
+
+    <section class="homeSection" aria-labelledby="sobre-ispezionare">
+        <div class="homeContainer homeIntro">
+            <div>
+                <p class="homeEyebrow">Engenharia Diagnóstica</p>
+                <h2 id="sobre-ispezionare">Conhecimento técnico aplicado às edificações.</h2>
+            </div>
+            <div class="homeCopy">
+                <p>A Ispezionare – Inspeções e Perícias de Engenharia atua na Engenharia Diagnóstica, reunindo experiência profissional superior a 20 anos na construção civil e atuação em conjunto com empresas e profissionais de reconhecida experiência técnica.</p>
+                <p>Os trabalhos são desenvolvidos com foco na investigação das manifestações patológicas, análise das condições construtivas e produção de informações técnicas destinadas a subsidiar decisões relacionadas às edificações.</p>
+                <a class="homeTextLink" href="pages/aboutUs.html">Conheça a Ispezionare <span aria-hidden="true">→</span></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="services homeSection homeTint" aria-labelledby="servicos-titulo">
+        <div class="homeContainer">
+        <div class="servicesHead homeHeading">
+            <p class="homeEyebrow">Nossos serviços</p>
+            <h2 id="servicos-titulo">Precisão no diagnóstico.<br>Segurança em cada solução.</h2>
         </div>
         <div class="servicesSquares">
             <a href="pages/services.html#inspecoes-vistorias" class="cardLink">
                 <article class="squares">
-                    <img src="images/images-index/squareOne_img.png" alt="">
-                    <h3>Inspeções e Vistorias Técnicas Prediais</h3>
-                    <p><span class="yText">Avaliação especializada</span> das condições das edificações, com <span class="yText">identificação de anomalias</span> e não conformidades construtivas.</p>
+                    <img src="images/images-index/squareOne_img.png" alt="" loading="lazy">
+                    <span class="serviceNumber" aria-hidden="true">01</span>
+                    <h3>Inspeções e Vistorias Técnicas</h3>
+                    <p>Avaliação especializada das condições construtivas das edificações, com identificação de anomalias, manifestações patológicas e não conformidades.</p>
                 </article>
             </a>
             <a href="pages/services.html#pericias-assistencia-tecnica" class="cardLink">
                 <article class="squares">
-                    <img src="images/images-index/squareTwo_img.png" alt="">
-                    <h3>Perícias e Assistência Técnica Jurídica</h3>
-                    <p>Atuação em demandas <span class="yText">judiciais e extrajudiciais</span>, com análise técnica, elaboração de pareceres e<span class="yText"> suporte técnico especializado</span>.</p>
+                    <img src="images/images-index/squareTwo_img.png" alt="" loading="lazy">
+                    <span class="serviceNumber" aria-hidden="true">02</span>
+                    <h3>Perícias de Engenharia e Assistência Técnica</h3>
+                    <p>Atuação em demandas judiciais e extrajudiciais, com análise técnica, inspeções, pareceres e acompanhamento de diligências periciais.</p>
                 </article>
             </a>
             <a href="pages/services.html#diagnostico-patologias-construtivas" class="cardLink">
                 <article class="squares">
-                    <img src="images/images-index/squareThree_img.png" alt="">
+                    <img src="images/images-index/squareThree_img.png" alt="" loading="lazy">
+                    <span class="serviceNumber" aria-hidden="true">03</span>
                     <h3>Diagnóstico de Patologias Construtivas</h3>
-                    <p><span class="yText">Investigação das causas</span> e mecanismos relacionados às <span class="yText">manifestações patológicas</span> da edificação.</p>
+                    <p>Investigação dos mecanismos, causas e origens relacionados às manifestações patológicas observadas nas edificações.</p>
                 </article>
             </a>
         </div>
-    </div>
+        <a class="homeTextLink homeSectionLink" href="pages/services.html">Conheça todos os serviços <span aria-hidden="true">→</span></a>
+        </div>
+    </section>
+
+    <section class="homeSection" aria-labelledby="publicos-titulo">
+        <div class="homeContainer">
+            <div class="homeHeading">
+                <p class="homeEyebrow">Para quem atuamos</p>
+                <h2 id="publicos-titulo">Soluções técnicas para diferentes necessidades.</h2>
+            </div>
+            <div class="homeAudiences">
+                <article><h3>Condomínios</h3><p>Inspeções prediais, manifestações patológicas, fachadas, estruturas, impermeabilização, garantias e recebimento de obras.</p></article>
+                <article><h3>Construtoras e incorporadoras</h3><p>Inspeções técnicas, assistência técnica, análise de vícios construtivos, recebimento de obras e suporte às áreas de engenharia e garantia.</p></article>
+                <article><h3>Unidades privativas</h3><p>Investigação de infiltrações, fissuras, revestimentos, reformas e demais manifestações construtivas.</p></article>
+                <article><h3>Demandas judiciais e extrajudiciais</h3><p>Perícias de engenharia, assistência técnica, pareceres e acompanhamento técnico de diligências.</p></article>
+            </div>
+        </div>
+    </section>
+
+    <section class="homeSection homeTint" aria-labelledby="metodo-titulo">
+        <div class="homeContainer">
+            <div class="homeHeading">
+                <p class="homeEyebrow">Como trabalhamos</p>
+                <h2 id="metodo-titulo">Da manifestação observada à análise técnica.</h2>
+            </div>
+            <ol class="homeMethod">
+                <li><span aria-hidden="true">01</span><h3>Entendimento da demanda</h3><p>Levantamento das reclamações, histórico da edificação e objetivo do trabalho.</p></li>
+                <li><span aria-hidden="true">02</span><h3>Análise técnica e documental</h3><p>Avaliação das informações, documentos, projetos e registros disponíveis.</p></li>
+                <li><span aria-hidden="true">03</span><h3>Inspeção e investigação</h3><p>Vistoria técnica, documentação das manifestações e aplicação dos métodos de investigação compatíveis com cada caso.</p></li>
+                <li><span aria-hidden="true">04</span><h3>Diagnóstico e orientação técnica</h3><p>Análise dos dados coletados e elaboração do relatório, laudo ou parecer correspondente ao escopo contratado.</p></li>
+            </ol>
+        </div>
+    </section>
 
     <section class="problems" aria-labelledby="problemas-titulo">
         <header class="problemsHeader">
-            <p>QUANDO PROCURAR UMA AVALIAÇÃO?</p>
-            <h2 id="problemas-titulo">Seu imóvel apresenta algum <span class="yText">destes sinais?</span></h2>
-            <p>Selecione um card para entender como uma avaliação técnica pode ajudar.</p>
+            <p class="homeEyebrow">Manifestações que exigem investigação técnica</p>
+            <h2 id="problemas-titulo">Alguns sinais não devem ser avaliados apenas pela aparência.</h2>
+            <p>Fissuras, infiltrações, destacamentos e outras manifestações podem possuir mecanismos e origens distintos. A investigação técnica permite compreender o problema antes da definição da intervenção.</p>
         </header>
         <div class="problemsLista">
             <div class="problemsLinha">
@@ -82,7 +154,7 @@
                     <div class="problemDescription" id="descricao-infiltracao" hidden>
                         <h3>O primeiro passo é entender a origem.</h3>
                         <p>Manchas e vazamentos recorrentes merecem atenção. A avaliação técnica ajuda a investigar a origem da entrada de água e orientar os próximos passos antes de realizar reparos.</p>
-                        <a href="https://wa.me/message/LAXNS5ODI656J1" target= "_blank">Fale sobre seu problema ↗</a>
+                        <a href="https://wa.me/message/LAXNS5ODI656J1" target="_blank" rel="noopener noreferrer">Fale sobre seu problema ↗</a>
                     </div>
                 </article>
             </div>
@@ -97,7 +169,7 @@
                     <div class="problemDescription" id="descricao-fissuras" hidden>
                         <h3>Entenda os sinais da sua edificação.</h3>
                         <p>A análise das características das fissuras e das condições da edificação ajuda a compreender suas possíveis causas e definir a necessidade de outras investigações.</p>
-                        <a href="https://wa.me/message/LAXNS5ODI656J1" target= "_blank">Fale sobre seu problema ↗</a>
+                        <a href="https://wa.me/message/LAXNS5ODI656J1" target="_blank" rel="noopener noreferrer">Fale sobre seu problema ↗</a>
                     </div>
                 </article>
             </div>
@@ -112,7 +184,7 @@
                     <div class="problemDescription" id="descricao-fachada" hidden>
                         <h3>Um olhar técnico para o exterior.</h3>
                         <p>A inspeção permite avaliar as condições da fachada, registrar anomalias nos revestimentos e orientar medidas de manutenção conforme os problemas identificados.</p>
-                        <a href="https://wa.me/message/LAXNS5ODI656J1" target= "_blank">Fale sobre seu problema ↗</a>
+                        <a href="https://wa.me/message/LAXNS5ODI656J1" target="_blank" rel="noopener noreferrer">Fale sobre seu problema ↗</a>
                     </div>
                 </article>
             </div>
@@ -127,12 +199,15 @@
                     <div class="problemDescription" id="descricao-revestimentos" hidden>
                         <h3>Entenda o que está causando o descolamento.</h3>
                         <p>Peças soltas, estufadas ou com som oco merecem atenção. A avaliação técnica ajuda a identificar as causas e orientar os reparos necessários.</p>
-                        <a href="https://wa.me/message/LAXNS5ODI656J1" target= "_blank">Fale sobre seu problema ↗</a>
+                        <a href="https://wa.me/message/LAXNS5ODI656J1" target="_blank" rel="noopener noreferrer">Fale sobre seu problema ↗</a>
                     </div>
                 </article>
             </div>
         </div>
     </section>
+
+
+    </main>
 
     <footer class="siteFooter">
         <div class="footerContent">
@@ -164,5 +239,6 @@
         </div>
     </footer>
     <script src="scripts/index.js" defer></script>
+    <script src="scripts/header.js" defer></script>
 </body>
 </html>

@@ -25,7 +25,7 @@ body {
 .initialContainerServices {
     min-height: 45rem;
     padding-bottom: 3rem;
-    margin-top: -60px;
+    margin-top: 0;
     background-image: url(../images/images-services/backgroundServices.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -33,7 +33,7 @@ body {
     box-shadow: 0 12px 18px -12px rgb(36 36 36 / 18%);
 }
 .initialContentServices {
-    padding-top: 110px;
+    padding-top: 10rem;
     padding-left: var(--serviceGutter);
     padding-right: var(--serviceGutter);
     padding-bottom: 2.5rem;
@@ -129,7 +129,7 @@ body {
     grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr);
 }
 .serviceVistoria[id] {
-    scroll-margin-top: 4rem;
+    scroll-margin-top: 9rem;
 }
 .serviceVistoria + .serviceVistoria {
     margin-top: 2rem;
@@ -223,15 +223,6 @@ body {
 a:focus-visible, summary:focus-visible {
     outline: 3px solid #8a6b00;
     outline-offset: 5px;
-}
-.headerItens {
-    background: linear-gradient(to bottom, rgb(247 247 245 / 30%),rgb(247 247 245 / 0%));
-}
-.headerItens .waMe {
-    color: var(--serviceInk);
-}
-.headerItens .waMeArrow {
-    color: var(--serviceInk);
 }
 .textLink {
     color: inherit;
@@ -476,7 +467,7 @@ a:focus-visible, summary:focus-visible {
 }
 @media (max-width: 760px) {
     .initialContainerServices { margin-top: 0; min-height: 0; background-position: 65% top; background-image: linear-gradient(90deg, rgb(247 247 245 / 97%), rgb(247 247 245 / 82%)), url(../images/images-services/backgroundServices.png); }
-    .initialContentServices { padding-top: 3rem; }
+    .initialContentServices { padding-top: 10rem; }
     .initialContentServices h1 { margin-left: 0; }
     .initialContentServices > p:last-child { font-size: 1.2rem; }
     .initialContentServices > p:last-child br { display: none; }
