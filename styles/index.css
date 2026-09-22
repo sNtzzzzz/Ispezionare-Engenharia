@@ -1,7 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap');
 * {
-    padding: 0;
-    margin: 0;
     font-family: "Quicksand", sans-serif;
 }
 body {
@@ -9,30 +6,6 @@ body {
     background-color: #f7f7f5;
     color: #242424;
 }
-@media screen and (max-width: 700px) {
-    .hero {
-        padding: 120px 1.5rem 2rem;
-        min-height: 75svh;
-    }
-    .mainPart h1 {
-        font-size: 2rem;
-    }
-    .mainPart h2 {
-        font-size: 1.125rem;
-    }
-    .problem, .problemsLinha:nth-child(even) .problem { 
-        width: 100%; 
-        flex-direction: column; }
-    .problemsImg { 
-        flex-basis: auto; 
-        width: 100%; 
-        min-height: 280px; }
-    .problemDescription { 
-        flex-basis: auto; 
-        width: 100%; 
-    }
-}
-
 /*  Parte inicial/foto  */
 
 .hero {
@@ -59,7 +32,8 @@ body {
 }
 .mainPart h2 {
     margin-top: 1rem;
-    width: 60rem;
+    width: 100%;
+    max-width: 60rem;
     font-weight: 400;
     font-size: 1.375rem;
     font-style: italic;
@@ -115,6 +89,7 @@ body {
 }
 .servicesSquares {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 3.75rem;
 }
@@ -153,134 +128,181 @@ body {
     color: #242424;
     background-color: #e9e9e5;
 }
-.problemsHeader, .problemsLista { 
-    max-width: 1120px; 
-    margin-inline: auto; 
+.problemsHeader, .problemsLista {
+    max-width: 1120px;
+    margin-inline: auto;
 }
-.problemsHeader { 
-    margin-bottom: 2.5rem; 
+.problemsHeader {
+    margin-bottom: 2.5rem;
 }
-.problemsHeader > p:first-child { 
-    font-size: .8rem; 
-    font-weight: 700; 
-    letter-spacing: .12em; 
-    margin-bottom: .8rem; 
+.problemsHeader > p:first-child {
+    font-size: .8rem;
+    font-weight: 700;
+    letter-spacing: .12em;
+    margin-bottom: .8rem;
 }
-.problemsHeader h2 { 
-    max-width: 750px; 
-    font-size: clamp(1.8rem, 3.5vw, 3rem); 
-    font-weight: 500; 
-    line-height: 1.15; 
-    margin-bottom: 1rem; 
+.problemsHeader h2 {
+    max-width: 750px;
+    font-size: clamp(1.8rem, 3.5vw, 3rem);
+    font-weight: 500;
+    line-height: 1.15;
+    margin-bottom: 1rem;
 }
-.problemsHeader > p:last-child { 
-    line-height: 1.7; 
+.problemsHeader > p:last-child {
+    line-height: 1.7;
 }
-.problemsLista { 
-    display: grid; 
-    gap: 1.5rem; 
+.problemsLista {
+    display: grid;
+    gap: 1.5rem;
 }
-.problemsLinha { 
-    container-type: inline-size; 
+.problemsLinha {
+    container-type: inline-size;
 }
-.problem { 
-    display: flex; 
-    width: 50%; 
-    overflow: hidden; 
-    border-radius: .8rem; 
+.problem {
+    display: flex;
+    width: 50%;
+    overflow: hidden;
+    border-radius: .8rem;
     background: #ffffff;
     --sombra-direcao: 18px;
     box-shadow: var(--sombra-direcao) 0 18px -14px rgb(0 0 0 / 0%);
     transition: width .45s ease, box-shadow .45s ease;
 }
-.problemsLinha:nth-child(even) .problem { 
+.problemsLinha:nth-child(even) .problem {
     --sombra-direcao: -18px;
-    margin-left: auto; 
-    flex-direction: row-reverse; 
+    margin-left: auto;
+    flex-direction: row-reverse;
 }
-.problem.ativo { 
-    width: 100%; 
+.problem.ativo {
+    width: 100%;
     box-shadow: var(--sombra-direcao) 0 18px -14px rgb(0 0 0 / 28%);
 }
-.problemsImg { 
-    position: relative; 
-    flex: 0 0 50cqw; 
-    min-height: 340px; 
-    border: 0; 
-    background: #292929; 
-    color: white; 
-    text-align: left; 
-    cursor: pointer; 
+.problemsImg {
+    position: relative;
+    flex: 0 0 50cqw;
+    min-height: 340px;
+    background: #292929;
+    color: white;
+    text-align: left;
+    cursor: pointer;
     overflow: hidden;
     border: 1px solid black;
-    border-radius: 13px; 
+    border-radius: 13px;
 }
-.problemsImg img { 
-    position: absolute; 
-    inset: 0; 
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover; 
+.problemsImg img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-.problemsImg::after { 
-    content: ""; 
-    position: absolute; 
-    inset: 0; 
-    background: linear-gradient(180deg, rgb(0 0 0 / 35%), transparent 35%, rgb(0 0 0 / 85%)); 
+.problemsImg::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgb(0 0 0 / 35%), transparent 35%, rgb(0 0 0 / 85%));
 }
-.problemNumber, .problemTitle, .problemIcon { 
-    position: absolute; 
-    z-index: 1; 
+.problemNumber, .problemTitle, .problemIcon {
+    position: absolute;
+    z-index: 1;
 }
-.problemNumber { 
-    top: 1.5rem; 
-    left: 1.5rem; 
-    font-size: .85rem; 
-    font-weight: 600; 
+.problemNumber {
+    top: 1.5rem;
+    left: 1.5rem;
+    font-size: .85rem;
+    font-weight: 600;
 }
-.problemTitle { 
-    bottom: 1.75rem; 
-    left: 1.5rem; 
-    right: 5rem; 
-    font-size: clamp(1.35rem, 2.5vw, 2rem); 
-    font-weight: 600; 
-    line-height: 1.2; 
+.problemTitle {
+    bottom: 1.75rem;
+    left: 1.5rem;
+    right: 5rem;
+    font-size: clamp(1.35rem, 2.5vw, 2rem);
+    font-weight: 600;
+    line-height: 1.2;
 }
-.problemIcon { 
-    bottom: 1.5rem; 
-    right: 1.5rem; 
-    display: grid; 
-    place-items: center; 
-    width: 2.5rem; 
-    height: 2.5rem; 
-    border-radius: 50%; 
-    background: #ecbe13; 
-    color: #242424; 
-    font-size: 1.8rem; 
-    transition: transform .3s ease; 
+.problemIcon {
+    bottom: 1.5rem;
+    right: 1.5rem;
+    display: grid;
+    place-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background: #ecbe13;
+    color: #242424;
+    font-size: 1.8rem;
+    transition: transform .3s ease;
 }
-.problem.ativo .problemIcon { 
-    transform: rotate(45deg); 
+.problem.ativo .problemIcon {
+    transform: rotate(45deg);
 }
-.problemDescription { 
-    box-sizing: border-box; 
-    flex: 0 0 50cqw; 
-    padding: clamp(1.5rem, 3vw, 3rem); 
-    display: flex; 
-    flex-direction: column; 
-    justify-content: center; 
-    gap: 1rem; 
-    line-height: 1.7; 
+.problemDescription {
+    box-sizing: border-box;
+    flex: 0 0 50cqw;
+    padding: clamp(1.5rem, 3vw, 3rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    line-height: 1.7;
 }
-.problemDescription[hidden] { 
-    display: none; 
+.problemDescription[hidden] {
+    display: none;
 }
-.problemDescription h3 { 
-    font-size: 1.3rem; 
-    line-height: 1.35; 
+.problemDescription h3 {
+    font-size: 1.3rem;
+    line-height: 1.35;
 }
-.problemDescription a { 
-    color: #242424; 
+.problemDescription a {
+    color: #242424;
     font-weight: 700;
-    text-underline-offset: .3em; 
+    text-underline-offset: .3em;
+}
+
+@media screen and (max-width: 760px) {
+    .headerItens {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    .hero {
+        padding: 11rem 1.5rem 2rem;
+        min-height: 75svh;
+        margin-top: 0;
+        aspect-ratio: auto;
+    }
+    .servicesHead {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        padding: 2rem 1.5rem;
+    }
+    .servicesHead h2 { font-size: 1.8rem; }
+    .servicesSquares {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        padding-inline: 1.5rem;
+    }
+    .cardLink { width: min(100%, 22rem); }
+    .squares { box-sizing: border-box; width: 100%; }
+    .squares img { max-width: 100%; object-fit: contain; }
+    .mainPart h1 {
+        font-size: 2rem;
+    }
+    .mainPart h2 {
+        font-size: 1.125rem;
+    }
+    .problem, .problemsLinha:nth-child(even) .problem {
+        width: 100%;
+        flex-direction: column; }
+    .problemsImg {
+        flex-basis: auto;
+        width: 100%;
+        min-height: 280px; }
+    .problemDescription {
+        flex-basis: auto;
+        width: 100%;
+    }
 }

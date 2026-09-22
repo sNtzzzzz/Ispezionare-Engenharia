@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -12,7 +11,6 @@ body {
 body > * {
     flex-shrink: 0;
 }
-
 /*  Header  */
 
 .headerItens,
@@ -21,14 +19,14 @@ body > * {
 .headerItens *::after {
     box-sizing: border-box;
 }
-
-.headerItens .logo a { display: block; height: 100%; }
-
+.headerItens .logo a {
+    display: block;
+    height: 100%;
+}
 .headerItens,
 .headerItens * {
     font-family: "Quicksand", sans-serif;
 }
-
 .headerItens {
     position: sticky;
     top: 0;
@@ -44,7 +42,7 @@ body > * {
     display: flex;
     padding-left: 3rem;
     align-items: center;
-    height: 110%;
+    height: 170%;
 }
 .logoHeader {
     display: block;
@@ -56,7 +54,6 @@ body > * {
     justify-self: center;
     align-items: stretch;
     padding: 0.25rem;
-    box-sizing: border-box;
     background-color: rgb(0 0 0 / 60%);
     width: min(100%, 29rem);
     border-radius: 3.5rem;
@@ -79,7 +76,6 @@ body > * {
 .iconsText:hover{
     background-color: white;
     color: black;
-    transition: 0.2s;
 }
 .headerItens .contact {
     display: flex;
@@ -93,7 +89,6 @@ body > * {
     align-items: center;
     justify-content: center;
     gap: .3rem;
-    box-sizing: border-box;
     padding: .25rem;
     padding-left: 0.8rem;
     background-color: #ecbe13;
@@ -222,13 +217,13 @@ body > * {
     .headerItens .contact { padding-right: 1rem; }
     .headerItens .icons { width: 95%; }
 }
-
 @media (max-width: 760px) {
-    .headerItens { position: relative; height: auto; grid-template-columns: minmax(0, 1fr) auto; grid-template-rows: auto auto; padding: .5rem; gap: .5rem; }
-    .headerItens .logo { height: 2.6rem; padding-left: .5rem; }
+    .headerItens { position: relative; height: auto; grid-template-columns: minmax(0, 1fr) auto; grid-template-rows: auto auto; padding: .5rem; gap: 1.75rem .5rem; }
+    .headerItens .logo { height: 3.5rem; padding-left: .5rem; }
+    .headerItens .logo img { height: 5rem;}
     .headerItens .logoHeader { max-width: 100%; object-fit: contain; }
     .headerItens .contact { padding: 0; }
-    .headerItens .waMe { margin: 0; }
+    .headerItens .waMe { margin: 0; border-radius: 100px;}
     .headerItens .icons { grid-column: 1 / -1; grid-row: 2; width: 100%; margin: 0; min-height: 2.75rem; }
     .footerContent { grid-template-columns: minmax(0, 1fr); }
 }

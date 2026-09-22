@@ -3,52 +3,198 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ispezionare Engenharia</title>
+    <title>Sobre a Ispezionare | Engenharia Diagnóstica e Perícias</title>
+    <meta name="description" content="Conheça a Ispezionare Engenharia, especializada em Engenharia Diagnóstica, Patologia das Construções, inspeções, perícias e assistência técnica.">
     <link rel="stylesheet" href="../styles/main.css">
-    <link rel="icon" type="image/png" class="icon" href="../images/images/icon.png?v=2">
+    <link rel="stylesheet" href="../styles/aboutUs.css">
+    <link rel="icon" type="image/png" href="../images/images/icon.png?v=2">
 </head>
-<body>
-    <div class="headerItens">
+<body class="aboutPage">
+    <a class="aboutSkip" href="#conteudo">Pular para o conteúdo</a>
+    <header class="headerItens">
         <div class="logo">
-            <img src="../images/images/logoHeader.png" class="logoHeader">
+            <img src="../images/images/logoHeader.png" class="logoHeader" alt="Ispezionare Engenharia">
         </div>
-        <div class="icons">
-            <a href="../index.html" class="iconsText home">Home</a>
-            <a href="aboutUs.html" class="iconsText sobreNos">Sobre Nós</a>
-            <a href="projects.html" class="iconsText projetos">Projetos</a>
-            <a href="services.html" class="iconsText servicos">Serviços</a>
-        </div>
+        <nav class="icons" aria-label="Navegação principal">
+            <a href="../index.html" class="iconsText">Home</a>
+            <a href="aboutUs.html" class="iconsText" aria-current="page">Sobre Nós</a>
+            <a href="projects.html" class="iconsText">Projetos</a>
+            <a href="services.html" class="iconsText">Serviços</a>
+        </nav>
         <div class="contact">
             <a href="https://wa.me/message/LAXNS5ODI656J1" class="waMe" target="_blank">
                 <span class="waMeText">Fale Conosco</span>
                 <span class="waMeArrow" aria-hidden="true">↗</span>
             </a>
         </div>
-    </div>
+    </header>
 
+    <main id="conteudo" tabindex="-1">
+        <section class="aboutHero" aria-labelledby="about-title">
+            <div class="aboutContainer aboutHeroGrid">
+                <div class="aboutHeroText">
+                    <p class="aboutEyebrow">Sobre a Ispezionare</p>
+                    <h1 id="about-title">Engenharia para <span>compreender</span> antes de decidir.</h1>
+                    <p class="aboutLead">A Ispezionare Engenharia atua na investigação, avaliação e diagnóstico de edificações, oferecendo suporte técnico para decisões sobre segurança, desempenho, conservação, entrega, manutenção, garantias e conflitos construtivos.</p>
+                    <a class="aboutLink" href="#quem-somos">Conheça nossa forma de olhar <span aria-hidden="true">↓</span></a>
+                </div>
+                <figure class="aboutHeroPhoto">
+                    <img src="../images/images-services/firstService.jpg" width="744" height="842" alt="Medição da abertura de uma trinca com fissurômetro." fetchpriority="high">
+                    <figcaption>Observar com critério.<br>Investigar com fundamento.</figcaption>
+                </figure>
+            </div>
+        </section>
 
+        <section class="aboutSection" aria-labelledby="quem-somos">
+            <div class="aboutContainer aboutSplit">
+                <div>
+                    <p class="aboutEyebrow">Quem somos</p>
+                    <h2 id="quem-somos">Engenharia Diagnóstica aplicada à realidade das edificações.</h2>
+                </div>
+                <div class="aboutCopy">
+                    <p>A Ispezionare Engenharia é especializada em Engenharia Diagnóstica, Patologia das Construções, Inspeções e Perícias de Engenharia.</p>
+                    <p>A empresa investiga anomalias, falhas, vícios construtivos e condições de desempenho, associando inspeção de campo, análise documental e, quando necessários, ensaios para compreender as possíveis causas dos problemas observados.</p>
+                    <p>Os trabalhos consideram as características de cada edificação, os sistemas construtivos, o histórico da ocorrência e as normas aplicáveis. Manifestações, registros e evidências são transformados em informações técnicas claras para subsidiar decisões.</p>
+                </div>
+            </div>
+        </section>
 
-    <!--  Footer  -->
+        <section class="aboutSection aboutTint" aria-labelledby="nosso-metodo">
+            <div class="aboutContainer">
+                <div class="aboutHeading">
+                    <p class="aboutEyebrow">Nossa forma de atuar</p>
+                    <h2 id="nosso-metodo">Da observação à orientação técnica.</h2>
+                </div>
+                <ol class="aboutMethod">
+                    <li><span aria-hidden="true">01</span><h3>Observar</h3><p>Inspeção técnica e levantamento das condições existentes.</p></li>
+                    <li><span aria-hidden="true">02</span><h3>Investigar</h3><p>Análise das manifestações, documentos, sistemas construtivos e histórico da ocorrência.</p></li>
+                    <li><span aria-hidden="true">03</span><h3>Correlacionar</h3><p>Avaliação das evidências e formulação das hipóteses técnicas.</p></li>
+                    <li><span aria-hidden="true">04</span><h3>Diagnosticar</h3><p>Identificação das causas, origens e mecanismos envolvidos, dentro dos limites técnicos do trabalho realizado.</p></li>
+                    <li><span aria-hidden="true">05</span><h3>Orientar</h3><p>Conclusões e recomendações para subsidiar decisões técnicas.</p></li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="aboutSection" aria-labelledby="areas-atuacao">
+            <div class="aboutContainer">
+                <div class="aboutHeading">
+                    <p class="aboutEyebrow">Áreas de atuação</p>
+                    <h2 id="areas-atuacao">Diferentes sistemas. O mesmo rigor na análise.</h2>
+                </div>
+                <div class="aboutAreas">
+                    <article><h3>Inspeções e Vistorias Técnicas</h3><p>Inspeção predial e avaliação de segurança, desempenho, conservação e manutenção. Inclui vistorias cautelares de vizinhança para registro das condições de imóveis no entorno de obras.</p></article>
+                    <article><h3>Diagnóstico de Patologias Construtivas</h3><p>Investigação de vícios, falhas, umidade, infiltrações e estanqueidade, além de manifestações em estruturas e fachadas.</p></article>
+                    <article><h3>Recebimento de Imóveis e Áreas Comuns</h3><p>Verificação das condições construtivas de unidades e empreendimentos antes ou durante a entrega e o recebimento.</p></article>
+                    <article><h3>Perícias e Assistência Técnica</h3><p>Atuação em demandas judiciais e extrajudiciais e consultoria especializada para análise de documentos, situações construtivas e questões técnicas.</p></article>
+                </div>
+                <a class="aboutLink" href="services.html">Conheça nossas áreas de atuação <span aria-hidden="true">↗</span></a>
+            </div>
+        </section>
+
+        <section class="aboutSection aboutTint" aria-labelledby="experiencia">
+            <div class="aboutContainer aboutSplit aboutExperience">
+                <figure class="aboutPhoto">
+                    <img src="../images/images-services/secondService.jpg" width="744" height="842" alt="Câmera termográfica utilizada na investigação de uma parede em garagem." loading="lazy" decoding="async">
+                    <figcaption>Instrumentos e evidências a serviço da investigação.</figcaption>
+                </figure>
+                <div class="aboutCopy">
+                    <p class="aboutEyebrow">Experiência técnica</p>
+                    <h2 id="experiencia">Uma visão construída em diferentes contextos da Engenharia Civil.</h2>
+                    <p>A atuação da Ispezionare reúne experiência profissional acumulada ao longo de aproximadamente duas décadas na Engenharia Civil, passando por diferentes etapas do setor da construção.</p>
+                    <p>Essa trajetória permite analisar as relações entre projeto, execução, materiais, uso, manutenção, desempenho e comportamento dos sistemas construtivos.</p>
+                    <p>A experiência inclui construção civil, inspeções, Engenharia Diagnóstica, Patologia das Construções, due diligence técnica, entrega e recebimento de empreendimentos, assistência técnica e perícias de engenharia.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="aboutSection" aria-labelledby="adriana-santiago">
+            <div class="aboutContainer aboutSplit">
+                <div class="aboutFounder">
+                    <p class="aboutEyebrow">À frente da Ispezionare</p>
+                    <h2 id="adriana-santiago">Eng. Civil<br>Adriana Santiago</h2>
+                    <p class="aboutCredentials">Engenheira Civil · CREA-SP<br>Pós-graduada em Patologia das Construções<br>Perita Judicial · Assistente Técnica Judicial</p>
+                </div>
+                <div class="aboutCopy">
+                    <p>Engenheira Civil com aproximadamente 20 anos de experiência profissional, com atuação voltada à Engenharia Diagnóstica, Patologia das Construções, inspeções técnicas, perícias e assistência técnica judicial.</p>
+                    <p>Possui experiência em trabalhos envolvendo condomínios residenciais, empreendimentos imobiliários, unidades privativas, edificações comerciais e demandas de investigação de manifestações patológicas e vícios construtivos.</p>
+                    <p>Mantém atuação direcionada ao estudo contínuo dos mecanismos de degradação, desempenho das edificações e metodologias aplicadas à investigação técnica.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="aboutSection aboutTint" aria-labelledby="parcerias">
+            <div class="aboutContainer aboutSplit">
+                <div>
+                    <p class="aboutEyebrow">Parcerias técnicas</p>
+                    <h2 id="parcerias">Competências que se complementam.</h2>
+                </div>
+                <div class="aboutCopy">
+                    <p>A Ispezionare também atua por meio de parcerias técnicas com profissionais e empresas especializadas, reunindo diferentes competências conforme as características e a complexidade de cada trabalho.</p>
+                    <p>Essa colaboração amplia a capacidade de atuação em projetos de diferentes portes e especialidades, preservando a independência técnica, a definição clara de responsabilidades e o rigor da investigação.</p>
+                    <p>Quando necessário, os trabalhos podem envolver especialistas em ensaios, levantamentos, fachadas, estruturas, impermeabilização, instalações, drones e outras disciplinas complementares.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="aboutSection" aria-labelledby="principios">
+            <div class="aboutContainer aboutSplit">
+                <div>
+                    <p class="aboutEyebrow">Princípios</p>
+                    <h2 id="principios">O que sustenta cada conclusão.</h2>
+                </div>
+                <dl class="aboutPrinciples">
+                    <div><dt>Independência técnica</dt><dd>Conclusões fundamentadas nas evidências disponíveis e nos limites do trabalho contratado.</dd></div>
+                    <div><dt>Rastreabilidade</dt><dd>Registro das condições verificadas, procedimentos realizados e elementos utilizados na análise.</dd></div>
+                    <div><dt>Fundamentação</dt><dd>Análise baseada em engenharia, literatura técnica, documentação disponível e normas aplicáveis.</dd></div>
+                    <div><dt>Clareza</dt><dd>Informações objetivas e compreensíveis aos responsáveis pela decisão.</dd></div>
+                    <div><dt>Responsabilidade</dt><dd>Definição adequada do escopo, limitações, métodos e conclusões de cada trabalho.</dd></div>
+                </dl>
+            </div>
+        </section>
+
+        <section class="aboutSection aboutTint" aria-labelledby="publicos">
+            <div class="aboutContainer">
+                <div class="aboutHeading">
+                    <p class="aboutEyebrow">Para quem trabalhamos</p>
+                    <h2 id="publicos">Uma abordagem para cada demanda.</h2>
+                    <p>Cada demanda exige uma leitura diferente da edificação. O escopo é definido conforme o problema técnico, os objetivos do contratante e as condições disponíveis para investigação.</p>
+                </div>
+                <ul class="aboutAudiences"><li>Condomínios</li><li>Construtoras</li><li>Administradoras</li><li>Proprietários</li><li>Empresas</li><li>Escritórios jurídicos</li></ul>
+            </div>
+        </section>
+
+        <section class="aboutSection aboutClosing" aria-labelledby="contato">
+            <div class="aboutContainer">
+                <p class="aboutEyebrow">Segurança para decidir</p>
+                <h2 id="contato">Uma boa decisão começa por um diagnóstico bem fundamentado.</h2>
+                <p>Se sua edificação apresenta manifestações patológicas, dúvidas sobre execução, condições de entrega, desempenho ou conflitos de natureza técnica, a Ispezionare pode avaliar o caso e definir a abordagem adequada.</p>
+                <div class="aboutActions">
+                    <a class="aboutButton" href="https://wa.me/message/LAXNS5ODI656J1" target="_blank" rel="noopener noreferrer">Solicitar uma proposta <span aria-hidden="true">↗</span></a>
+                    <a class="aboutLink" href="services.html">Conheça nossos serviços <span aria-hidden="true">↗</span></a>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer class="siteFooter">
         <div class="footerContent">
             <div class="footerBrand">
-                <a href="index.html" aria-label="Ispezionare Engenharia — início">
+                <a href="../index.html" aria-label="Ispezionare Engenharia — início">
                     <img src="../images/images/logoHeader.png" alt="Ispezionare Engenharia" loading="lazy">
                 </a>
                 <p>Diagnósticos precisos para decisões mais seguras.</p>
             </div>
             <nav class="footerLinks" aria-label="Navegação do rodapé">
                 <h2>Explore</h2>
-                <a href="index.html" aria-current="page">Home</a>
-                <a href="pages/aboutUs.html">Sobre nós</a>
-                <a href="pages/projects.html">Projetos</a>
-                <a href="pages/services.html">Serviços</a>
+                <a href="../index.html">Home</a>
+                <a href="aboutUs.html" aria-current="page">Sobre nós</a>
+                <a href="projects.html">Projetos</a>
+                <a href="services.html">Serviços</a>
             </nav>
             <div class="footerContact">
                 <h2>Contato</h2>
                 <address>
-                    <p>Av. Senador Vergueiro, 4230, sala 19<br>CEP: 09604-000</p>
+                    <p>Av. Senador Vergueiro, 4230 — Sala 19<br>Rudge Ramos — São Bernardo do Campo/SP<br>CEP: 09604-000</p>
                     <p>ispezionare.eng@gmail.com</p>
                     <a href="https://wa.me/message/LAXNS5ODI656J1" target="_blank" rel="noopener noreferrer">Fale conosco pelo WhatsApp ↗</a>
                 </address>
@@ -59,5 +205,6 @@
             <p>© 2026 Ispezionare Engenharia. Todos os direitos reservados.</p>
         </div>
     </footer>
+    <script src="../scripts/aboutUs.js" defer></script>
 </body>
 </html>
