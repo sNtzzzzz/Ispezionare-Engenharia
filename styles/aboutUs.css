@@ -336,7 +336,9 @@
 }
 @media (max-width: 760px) {
     .aboutHero {
-        padding-top: 2.5rem;
+        padding-top: 9.5rem;
+        margin-top: -145px;
+        margin-left: 0;
     }
     .aboutHeroGrid, .aboutSplit, .aboutAreas {
         grid-template-columns: minmax(0, 1fr);
