@@ -3,11 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ispezionare Engenharia</title>
+    <title>Projetos | Ispezionare — Engenharia Diagnóstica</title>
+    <meta name="description" content="Conheça projetos e atuações técnicas da Ispezionare em inspeções, patologias construtivas, estruturas, umidade, fachadas, recebimento de obras e vistorias.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="Ispezionare Engenharia">
+    <meta property="og:title" content="Projetos | Ispezionare — Engenharia Diagnóstica">
+    <meta property="og:description" content="Engenharia em campo. Conheça inspeções, investigações e acompanhamentos técnicos da Ispezionare e experiências em parceria técnica.">
     <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/projects.css">
     <link rel="icon" type="image/png" href="../images/images/icon.png?v=2">
 </head>
-<body>
+<body class="projectsPage">
+    <a class="projectsSkip" href="#conteudo">Pular para o conteúdo</a>
     <header class="headerItens isScrolled" data-solid-header>
         <div class="logo">
             <img src="../images/images/logoHeader.png" class="logoHeader" alt="Ispezionare Engenharia">
@@ -25,6 +33,103 @@
             </a>
         </div>
     </header>
+
+    <main id="conteudo" tabindex="-1">
+        <section class="projectsHero" aria-labelledby="projects-title">
+            <div class="projectsContainer">
+                <p class="projectsEyebrow">Projetos</p>
+                <h1 id="projects-title">Engenharia em campo.<br><span>Evidências que orientam decisões.</span></h1>
+                <p>Uma seleção de inspeções, investigações e acompanhamentos técnicos desenvolvidos pela Ispezionare e em atuações de parceria técnica.</p>
+                <a class="projectsTextLink" href="#portfolio">Explore as atuações <span aria-hidden="true">↓</span></a>
+            </div>
+        </section>
+
+        <section class="projectsSection" aria-labelledby="introducao-titulo">
+            <div class="projectsContainer projectsIntro">
+                <h2 id="introducao-titulo">Cada edificação apresenta condições próprias.</h2>
+                <div>
+                    <p>Os projetos apresentados representam diferentes contextos de atuação em Engenharia Diagnóstica. Cada trabalho parte da compreensão da demanda, da análise das informações disponíveis e da investigação das condições observadas em campo.</p>
+                    <p>O objetivo desta seleção não é apresentar apenas imagens de anomalias, mas demonstrar a diversidade dos trabalhos técnicos desenvolvidos.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="projectsSection" id="portfolio" aria-labelledby="portfolio-titulo">
+            <div class="projectsContainer">
+                <div class="projectsHeading">
+                    <h2 id="portfolio-titulo">Diferentes demandas.<br>Uma investigação criteriosa.</h2>
+                </div>
+                <div class="projectsFilters" role="group" aria-label="Filtrar projetos por categoria" hidden>
+                    <button type="button" data-category="todos" aria-pressed="true" aria-controls="own-projects partner-projects">Todos</button>
+                    <button type="button" data-category="umidade" aria-pressed="false" aria-controls="own-projects partner-projects">Umidade</button>
+                    <button type="button" data-category="estruturas" aria-pressed="false" aria-controls="own-projects partner-projects">Estruturas</button>
+                    <button type="button" data-category="vicios" aria-pressed="false" aria-controls="own-projects partner-projects">Vícios construtivos</button>
+                    <button type="button" data-category="vizinhanca" aria-pressed="false" aria-controls="own-projects partner-projects">Vizinhança</button>
+                    <button type="button" data-category="recebimento" aria-pressed="false" aria-controls="own-projects partner-projects">Recebimento</button>
+                    <button type="button" data-category="fachadas" aria-pressed="false" aria-controls="own-projects partner-projects">Fachadas</button>
+                    <button type="button" data-category="reformas" aria-pressed="false" aria-controls="own-projects partner-projects">Reformas</button>
+                </div>
+                <p id="project-count" class="projectCount" role="status" aria-live="polite" aria-atomic="true"></p>
+                <p class="projectsEmpty" id="projects-empty" hidden>Nenhum projeto desta categoria está disponível nesta seleção. Escolha outra categoria ou consulte <a href="services.html">nossos serviços</a>.</p>
+                <section id="own-section" class="projectsGroup" aria-labelledby="own-title" hidden>
+                    <div class="projectsGroupHeading">
+                        <h3 id="own-title">Atuação Ispezionare</h3>
+                        <p>Inspeções, investigações e acompanhamentos técnicos desenvolvidos pela empresa.</p>
+                    </div>
+                    <div id="own-projects" class="projectsGrid"></div>
+                </section>
+                <section id="partner-section" class="projectsGroup projectsPartners" aria-labelledby="partner-title" hidden>
+                    <div class="projectsHeading">
+                        <p class="projectsEyebrow">Parcerias técnicas</p>
+                        <h3 id="partner-title">Experiência construída também em colaboração técnica.</h3>
+                        <p>A atuação profissional compreende também trabalhos desenvolvidos em conjunto com empresas e profissionais especializados, ampliando a experiência aplicada a diferentes tipologias e demandas da Engenharia Diagnóstica.</p>
+                    </div>
+                    <div id="partner-projects" class="projectsGrid"></div>
+                </section>
+                <noscript>
+                    <div class="projectsFallback">
+                        <h3>Atuação Ispezionare</h3>
+                        <p>A seleção reúne inspeção especializada de umidade em edificação residencial, vistoria cautelar de vizinhança, inspeção de vícios construtivos em residência unifamiliar, acompanhamento de recuperação estrutural, inspeção especializada de estrutura e vistoria de recebimento de chaves.</p>
+                        <h3>Parceria técnica</h3>
+                        <p>As experiências em colaboração incluem inspeções de vícios construtivos e fachadas em condomínios residenciais, umidade em unidade comercial e estrutura em edificação residencial.</p>
+                        <p>Ative o JavaScript para filtrar a seleção e abrir os detalhes de cada trabalho. Você também pode <a href="services.html">conhecer nossos serviços</a> ou <a href="https://wa.me/message/LAXNS5ODI656J1" target="_blank" rel="noopener noreferrer">conversar com a equipe</a>.</p>
+                    </div>
+                </noscript>
+            </div>
+        </section>
+
+        <section class="projectsSection projectsClosing" aria-labelledby="contato-titulo">
+            <div class="projectsContainer">
+                <p class="projectsEyebrow">Avaliação técnica</p>
+                <h2 id="contato-titulo">Cada edificação exige uma leitura própria.</h2>
+                <p>Converse com a Ispezionare sobre a condição da edificação e o objetivo da avaliação.</p>
+                <a class="projectsButton" href="https://wa.me/message/LAXNS5ODI656J1" target="_blank" rel="noopener noreferrer">Solicite uma proposta <span aria-hidden="true">→</span></a>
+            </div>
+        </section>
+    </main>
+
+    <dialog class="projectDialog" id="project-dialog" aria-modal="true" aria-labelledby="dialog-title">
+        <div class="dialogToolbar">
+            <p>Portfólio técnico / Ispezionare</p>
+            <button type="button" class="dialogClose" aria-label="Fechar detalhes do projeto" autofocus>Fechar <span aria-hidden="true">×</span></button>
+        </div>
+        <div class="dialogBody">
+            <div id="dialog-cover" hidden></div>
+            <h2 id="dialog-title"></h2>
+            <p class="projectType" id="dialog-type"></p>
+            <p class="dialogCategory" id="dialog-category"></p>
+            <div class="dialogDetails">
+                <section aria-labelledby="contexto-titulo"><h3 id="contexto-titulo">Contexto</h3><p id="dialog-summary"></p></section>
+                <section aria-labelledby="atuacao-titulo"><h3 id="atuacao-titulo">Atuação</h3><p id="dialog-scope"></p></section>
+                <section aria-labelledby="documentacao-titulo"><h3 id="documentacao-titulo">Documentação técnica</h3><ul id="dialog-documentation"></ul></section>
+            </div>
+            <section id="dialog-gallery-section" aria-labelledby="galeria-titulo" hidden>
+                <h3 id="galeria-titulo">Registros de campo</h3>
+                <div class="projectGallery" id="dialog-gallery"></div>
+            </section>
+            <a class="projectsButton" href="https://wa.me/message/LAXNS5ODI656J1" target="_blank" rel="noopener noreferrer">Precisa de uma avaliação semelhante? <span aria-hidden="true">→</span></a>
+        </div>
+    </dialog>
 
     <footer class="siteFooter">
         <div class="footerContent">
@@ -56,5 +161,6 @@
         </div>
     </footer>
     <script src="../scripts/header.js" defer></script>
+    <script src="../scripts/projects.js" defer></script>
 </body>
 </html>

@@ -150,9 +150,11 @@
     text-decoration-thickness: 2px;
     text-underline-offset: .4em;
     line-height: 1.6;
+    transition: .2s;
 }
 .homeTextLink:hover {
     text-decoration-color: white;
+    color: #856700;
 }
 .hero .homeTextLink {
     text-decoration-color: var(--homeGold);
