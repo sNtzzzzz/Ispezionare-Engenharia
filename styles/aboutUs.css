@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
 .aboutPage {
     --aboutGold: #ecbe13;
@@ -68,7 +67,7 @@
     line-height: 1.7;
 }
 .aboutPage [id] {
-    scroll-margin-top: 7rem;
+    scroll-margin-top: calc(var(--header-height) + 1rem);
 }
 .aboutEyebrow {
     margin-bottom: 1rem;
@@ -88,7 +87,7 @@
 }
 .aboutHero {
     margin-top: 0;
-    padding-block: 10rem 3rem;
+    padding-block: calc(var(--header-height) + 3rem) 3rem;
     color: #fff;
     background: var(--aboutInk);
 }
@@ -99,7 +98,7 @@
     gap: clamp(2rem, 5vw, 5rem);
 }
 .aboutHeroText h1 {
-    font-size: clamp(2.5rem, 4.7vw, 4.5rem);
+    font-size: clamp(2.35rem, 3.8vw, 3.6rem);
     font-weight: 500;
     line-height: 1.08;
     letter-spacing: -.025em;
@@ -209,21 +208,6 @@
 .aboutMethod p {
     color: var(--aboutMuted);
 }
-.aboutAreas {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 2rem 3rem;
-}
-.aboutAreas article {
-    padding-top: 1.25rem;
-    border-top: 1px solid #bdbdb5;
-}
-.aboutAreas h3 {
-    margin-bottom: .65rem;
-}
-.aboutAreas p {
-    color: var(--aboutMuted);
-}
 .aboutExperience {
     align-items: center;
 }
@@ -261,23 +245,6 @@
 }
 .aboutPrinciples dd {
     color: var(--aboutMuted);
-}
-.aboutAudiences {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 1rem 2rem;
-    list-style: none;
-}
-.aboutAudiences li {
-    padding-block: .85rem;
-    border-top: 1px solid #bdbdb5;
-    font-size: 1.1rem;
-    transition: .2s;
-    cursor: pointer;
-}
-.aboutAudiences li:hover {
-    transform: scale(1.005);
-    color: var(--aboutGold);
 }
 .aboutClosing {
     background: var(--aboutInk);
@@ -334,13 +301,13 @@
     }
 }
 @media (max-width: 760px) {
+    .aboutHeroGrid, .aboutSplit {
+        grid-template-columns: minmax(0, 1fr);
+    }
     .aboutHero {
-        padding-top: 9.5rem;
+        padding-top: calc(var(--header-height) + 2rem);
         margin-top: 0;
         margin-left: 0;
-    }
-    .aboutHeroGrid, .aboutSplit, .aboutAreas {
-        grid-template-columns: minmax(0, 1fr);
     }
     .aboutHeroPhoto {
         max-width: 30rem;
@@ -360,16 +327,6 @@
     .aboutMethod li:last-child {
         padding-bottom: 0;
     }
-    .aboutMethod li::before {
-        left: 1.3rem;
-        top: 0;
-        bottom: 0;
-        width: 1px;
-        height: auto;
-    }
-    .aboutMethod li:last-child::before {
-        display: none;
-    }
     .aboutMethod li > span {
         position: absolute;
         top: 0;
@@ -386,10 +343,6 @@
     }
     .aboutPhoto img {
         aspect-ratio: 4 / 3;
-    }
-    .aboutAudiences {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: .5rem 1rem;
     }
 }
 @media (prefers-reduced-motion: reduce) {

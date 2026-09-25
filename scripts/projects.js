@@ -129,8 +129,7 @@
         vicios: 'Vícios construtivos',
         vizinhanca: 'Vizinhança',
         recebimento: 'Recebimento',
-        fachadas: 'Fachadas',
-        reformas: 'Reformas'
+        fachadas: 'Fachadas'
     };
     const involvementLabels = { own: 'Atuação Ispezionare', partner: 'Parceria técnica' };
     const dialog = document.querySelector('#project-dialog');
@@ -171,6 +170,7 @@
         article.append(element('p', 'projectCategory', categories[project.category]));
         article.append(element('h4', '', project.title));
         article.append(element('p', 'projectType', project.type));
+        article.append(element('p', 'projectSummary', project.summary));
         const button = element('button', 'projectOpen projectsTextLink', 'Ver projeto ↗');
         button.type = 'button';
         button.dataset.project = project.id;

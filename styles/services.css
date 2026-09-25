@@ -1,497 +1,201 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
-.headerItens.headerTransparent {
-    background: transparent;
-}
-@media (max-width: 760px) {
-    .headerItens.headerTransparent.isScrolled {
-        background: rgb(36 36 36 / 97%);
-    }
-}
-
-:root {
+.servicesPage {
     --serviceGold: #ecbe13;
     --serviceInk: #242424;
     --serviceMuted: #474747;
     --servicePaper: #f7f7f5;
     --serviceLine: #deded9;
-    --serviceWidth: 1200px;
     --serviceGutter: clamp(1.25rem, 4vw, 3rem);
-}
-*, *::before, *::after {
-    box-sizing: border-box;
-}
-* {
-    font-family: "Outfit", sans-serif;
-}
-body {
-    min-height: 100vh;
-    background-color: var(--servicePaper);
+    background: var(--servicePaper);
     color: var(--serviceInk);
+    font-family: "Outfit", sans-serif;
     overflow-wrap: break-word;
 }
-/*  introdução  */
-
-.initialContainerServices {
-    min-height: 45rem;
-    padding-bottom: 3rem;
-    margin-top: 0;
-    background-image: url(../images/images-services/backgroundServices.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center top;
-    box-shadow: 0 12px 18px -12px rgb(36 36 36 / 18%);
+.headerItens.headerTransparent {
+    background: transparent;
 }
-.initialContentServices {
-    padding-top: 10rem;
-    padding-left: var(--serviceGutter);
-    padding-right: var(--serviceGutter);
-    padding-bottom: 2.5rem;
-}
-.initialContentServices > p:first-child {
-    font-size: 1.1rem;
-    font-weight: 500;
-}
-.initialContentServices h1 {
-    padding-top: .8rem;
-    font-weight: 600;
-    font-size: clamp(2.4rem, 4.7vw, 4.5rem);
-    line-height: 1.12;
-    margin-left: -.3rem;
-}
-.initialContentServices > p:last-child {
-    padding-top: 1.7rem;
-    font-size: 1.6rem;
-    color: #474747;
-}
-.servicesHead {
-    display: flex;
-    padding-top: 1.5rem;
-    max-width: 43rem;
-    margin-left: var(--serviceGutter);
-    margin-right: var(--serviceGutter);
-    gap: 1rem;
-    position: relative;
-}
-.servicesHead::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 3rem;
-    max-width: 100%;
-    height: 3px;
-    background-color: var(--serviceGold);
-}
-.firstIdeas {
-    display: flex;
-    align-items: center;
-    flex: 1;
-    min-width: 0;
-    font-size: .9rem;
-    line-height: 1.5;
-}
-.firstIdeas img {
-    width: 3.5rem;
-    height: 3.5rem;
-    object-fit: contain;
-}
-
-/*  serviços  */
-
-.servicesContainer {
-    width: min(100%, calc(var(--serviceWidth) + 2 * var(--serviceGutter)));
-    margin-inline: auto;
-    padding: 1.3rem var(--serviceGutter) clamp(1.75rem, 3vw, 3rem);
-    position: relative;
-}
-.servicesContainer p {
-    line-height: 1.65;
-}
-.servicesHeader {
-    padding-top: clamp(2.2rem, 4vw, 4rem);
-}
-.servicesContent > .serviceVistoria:first-child > .serviceTitle h2 {
-    padding-top: 0;
-}
-.serviceTitle h2 {
-    font-weight: 500;
-    padding-top: 3rem;
-    font-size: clamp(1.7rem, 2.6vw, 2.5rem);
-    line-height: 1.2;
-}
-.serviceVistoria:nth-child(even) > .serviceTitle {
-    text-align: right;
-}
-.serviceTitle p.serviceTitleDesc {
-    color: #474747;
-    font-size: 1.3rem;
-    padding-top: .3rem;
-}
-.serviceDesc {
-    display: grid;
-    grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr);
-    align-items: center;
-    gap: clamp(1.5rem, 4vw, 3.5rem);
-    padding-top: 2rem;
-}
-.serviceVistoria:nth-child(even) .serviceDesc {
-    grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr);
-}
-.serviceVistoria[id] {
-    scroll-margin-top: 9rem;
-}
-.serviceVistoria + .serviceVistoria {
-    margin-top: 2rem;
-    border-top: 1px solid var(--serviceLine);
-}
-.descImg {
-    position: relative;
-    transition: .2s;
-}
-.descImg:hover {
-    transform: scale(1.005);
-}
-.descImg::after {
-    content: "";
-    position: absolute;
-    inset: 2px;
-    border-radius: 1.1rem;
-    background: linear-gradient(to top, rgb(0 0 0 / 65%), transparent 55%);
-    pointer-events: none;
-}
-.descImg .serviceImageCaption {
-    position: absolute;
-    bottom: 2rem;
-    left: 1.7rem;
-    right: 1.7rem;
-    z-index: 1;
-    color: #fff;
-    font-size: .8rem;
-    font-weight: 500;
-    line-height: 1.7;
-    letter-spacing: .15em;
-    text-transform: uppercase;
-    pointer-events: none;
-}
-.serviceImageCaption::before {
-    content: "";
-    display: block;
-    width: 2rem;
-    height: 4px;
-    margin-bottom: .9rem;
-    border-radius: 999px;
-    background-color: #ecbe13;
-}
-.descImg img{
-    display: block;
-    height: 29rem;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 1.2rem;
-    border: #deded9 2px solid;
-    box-shadow: 0 15px 20px rgb(36 36 36 / 20%);
-    transition: border-color .2s;
-}
-.descImg:hover img {
-    border: #ecbe13 2px solid;
-}
-.descriptions {
-    display: flex;
-    flex-direction: column;
-    gap: 1.75rem;
-    align-self: center;
-    min-width: 0;
-}
-.descDesc {
-    display: flex;
-    align-items: flex-start;
-    gap: 1rem;
-}
-.descDescTxt h3 {
-    font-size: 1.25rem;
-    font-weight: 600;
-    padding-bottom: .7rem;
-}
-.descDescTxt p {
-    font-size: 1.1rem;
-    color: var(--serviceMuted);
-}
-.descDescImg {
-    display: flex;
-    flex-shrink: 0;
-    background-color: rgb(190 190 175 / 25%);
-    border-radius: .4rem;
-}
-.descDescImg img {
-    width: 3.5rem;
-    height: 3.5rem;
-    object-fit: contain;
-}
-
-/* Links, navegação e acessibilidade desta página */
-a:focus-visible, summary:focus-visible {
-    outline: 3px solid #8a6b00;
+.servicesPage a:focus-visible, .servicesPage summary:focus-visible {
+    outline: 3px solid #856700;
     outline-offset: 5px;
 }
-.textLink {
-    color: inherit;
-    text-decoration-color: var(--serviceGold);
-    text-decoration-thickness: 2px;
-    text-underline-offset: .4em;
-    line-height: 1.8;
-    transition: text-decoration-color .2s;
-}
-.serviceContact {
-    display: block;
-    width: fit-content;
-    margin: 1.75rem 0 2.5rem auto;
-    font-size: 1rem;
-}
-.servicesContent > .serviceVistoria:last-child > .serviceContact {
-    margin-bottom: 0;
-}
-.serviceTitle .serviceKeywords {
-    margin-top: .9rem;
-    font-size: .88rem;
-    color: var(--serviceMuted);
-}
-
-/* Seções institucionais */
-.servicesSection {
-    padding: clamp(2rem, 3vw, 3rem) var(--serviceGutter);
-}
-.methodologySection {
-    padding-top: clamp(1.5rem, 2vw, 2rem);
-}
-.servicesSection[aria-labelledby="projetos-relacionados"] {
-    padding-bottom: clamp(1rem, 1.5vw, 1.5rem);
-}
-.servicesSection[aria-labelledby="perguntas-frequentes"] {
-    padding-top: clamp(1rem, 1.5vw, 1.5rem);
-}
-.sectionInner {
-    max-width: var(--serviceWidth);
+.sectionInner, .servicesContainer {
+    width: min(100% - 2 * var(--serviceGutter), 1200px);
     margin-inline: auto;
 }
-.sectionHeading {
-    margin-bottom: 1.5rem;
+.initialContainerServices {
+    padding-block: calc(var(--header-height) + 3rem) 3rem;
+    background-image: linear-gradient(90deg, rgb(247 247 245 / 95%), rgb(247 247 245 / 25%)), url(../images/images-services/backgroundServices.png);
+    background-size: cover;
+    background-position: center;
+}
+.initialContainerServices h1 {
+    max-width: 50rem;
+    font-size: clamp(2.5rem, 4.7vw, 4.5rem);
+    font-weight: 500;
+    line-height: 1.12;
+    letter-spacing: -.025em;
+}
+.initialContainerServices p:not(.sectionEyebrow) {
+    max-width: 35rem;
+    margin-top: 1.5rem;
+    line-height: 1.7;
+    color: var(--serviceMuted);
 }
 .sectionEyebrow {
-    font-size: .78rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: .14em;
     margin-bottom: 1rem;
+    font-size: .78rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: .12em;
 }
 .sectionEyebrow::before {
     content: "";
     display: block;
     width: 2rem;
-    height: 4px;
-    border-radius: 1rem;
-    margin-bottom: 1.2rem;
+    height: 3px;
+    margin-bottom: 1rem;
     background: var(--serviceGold);
 }
-.sectionHeading h2 {
-    font-size: clamp(1.8rem, 3vw, 2.75rem);
+.servicesPage main h2 {
+    font-size: clamp(1.8rem, 3vw, 2.7rem);
     font-weight: 500;
-    line-height: 1.15;
+    line-height: 1.2;
     text-wrap: balance;
 }
-.sectionHeading > p:last-child:not(.sectionEyebrow) {
-    max-width: 46rem;
-    margin-top: 1.25rem;
+.serviceVistoria {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: center;
+    gap: clamp(2rem, 5vw, 4rem);
+    padding-block: clamp(2.5rem, 4vw, 4rem);
+    border-bottom: 1px solid var(--serviceLine);
 }
-.servicesSection p:not(.sectionEyebrow) {
-    font-size: 1.05rem;
-    line-height: 1.7;
+.serviceVistoria:nth-child(even) .descImg {
+    grid-column: 2;
+    grid-row: 1;
+}
+.serviceVistoria:nth-child(even) .serviceCopy {
+    grid-column: 1;
+    grid-row: 1;
+}
+.descImg img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+.serviceCopy > p:not(.sectionEyebrow) {
+    margin-top: 1rem;
     color: var(--serviceMuted);
+    line-height: 1.7;
+    font-size: 1.1rem;
 }
-.servicesSection h3 {
-    font-size: 1.2rem;
+.serviceDetails {
+    margin-top: 1.5rem;
+    border-block: 1px solid var(--serviceLine);
+}
+.serviceDetails summary {
+    padding-block: 1rem;
+    cursor: pointer;
+    line-height: 1.5;
     font-weight: 500;
-    line-height: 1.35;
 }
-.methodologySection, .evidenceSection {
+.serviceDetails summary:hover {
+    color: #856700;
+}
+.serviceDetails dl {
+    padding-top: .5rem;
+    padding-bottom: 1rem;
+}
+.serviceDetails dl > div + div {
+    margin-top: 1rem;
+}
+.serviceDetails dt {
+    font-weight: 600;
+}
+.serviceDetails dd {
+    margin-top: .25rem;
+    color: var(--serviceMuted);
+    line-height: 1.6;
+}
+.textLink {
+    display: inline-block;
+    margin-top: 1rem;
+    padding-block: .65rem;
+    color: inherit;
+    text-decoration-color: #856700;
+    text-decoration-thickness: 2px;
+    text-underline-offset: .4em;
+    line-height: 1.6;
+}
+.textLink:hover {
+    text-decoration-color: currentColor;
+}
+.serviceScope {
+    padding-block: 1.5rem 2rem;
+    color: var(--serviceMuted);
+    font-size: .9rem;
+    line-height: 1.6;
+}
+.servicesSection, .finalContact {
+    padding-block: clamp(2.5rem, 4vw, 4rem);
+}
+.methodologySection {
     background: #eeeee9;
 }
 .methodSteps {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
     list-style: none;
 }
-.methodSteps li {
-    padding: 0 1.5rem 0 0;
-    position: relative;
-}
-.stepNumber {
-    position: relative;
-    display: inline-block;
-    padding-right: 1rem;
-    background: #eeeee9;
+.methodSteps li > span {
     color: #856700;
-    font-size: 3rem;
-    font-weight: 400;
-    line-height: 1.3;
+    font-size: 2.5rem;
 }
 .methodSteps h3 {
-    margin: 1.25rem 0 .75rem;
-}
-.audienceGrid, .relatedProjects {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 2rem;
-}
-.audienceGrid article {
-    padding-top: 1.5rem;
-    border-top: 1px solid #bdbdb5;
-}
-.audienceGrid h3 {
-    margin-bottom: .8rem;
-}
-.evidenceLayout, .faqLayout {
-    display: grid;
-    grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
-    gap: clamp(1.5rem, 3vw, 3rem);
-}
-.evidenceLayout .sectionHeading, .faqLayout .sectionHeading {
-    margin-bottom: 0;
-}
-.evidenceList {
-    list-style: none;
-    align-self: center;
-}
-.evidenceList li {
-    padding: 1.1rem 0 1.1rem 1.5rem;
-    border-bottom: 1px solid #cfcfc6;
-    position: relative;
-    line-height: 1.5;
-}
-.evidenceList li::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 1.65rem;
-    width: .4rem;
-    height: .4rem;
-    border-radius: 50%;
-    background: #856700;
-}
-.relatedProject {
-    display: block;
-    padding-bottom: 1.25rem;
-    border-bottom: 2px solid var(--serviceLine);
-    color: inherit;
-    text-decoration: none;
-    transition: border-color .2s, transform .2s; }
-.relatedProject h3 {
-    margin: 1.2rem 0 .75rem;
-}
-.projectLink {
-    display: inline-block;
-    margin-top: 1rem;
-    font-size: .9rem;
-    text-decoration: underline;
-    text-decoration-color: #8a6b00;
-    text-underline-offset: .3em;
-}
-.relatedProject:hover {
-    border-color: var(--serviceGold);
-    transform: scale(1.01);
-}
-.serviceFaq details {
-    border-bottom: 1px solid var(--serviceLine);
-}
-.serviceFaq details:first-child {
-    border-top: 1px solid var(--serviceLine);
-}
-.serviceFaq summary {
-    display: flex;
-    justify-content: space-between;
-    gap: 1.5rem;
-    padding: 1.3rem 0;
-    font-size: 1.1rem;
+    margin-block: .75rem .5rem;
+    font-size: 1.2rem;
     font-weight: 500;
-    cursor: pointer;
-    list-style: none;
 }
-.serviceFaq summary::-webkit-details-marker {
-    display: none;
-}
-.serviceFaq summary::after {
-    content: "+";
-    color: #856700;
-    font-size: 1.4rem;
-    flex-shrink: 0;
-    line-height: 1;
-}
-.serviceFaq details[open] summary::after {
-    content: "−";
-}
-.serviceFaq summary:hover {
-    color: #735900;
-}
-.serviceFaq details p {
-    padding: 0 2rem 1.5rem 0;
+.methodSteps p {
+    color: var(--serviceMuted);
+    line-height: 1.6;
 }
 .finalContact {
-    padding: clamp(2rem, 3.5vw, 3.5rem) var(--serviceGutter);
-    color: #fff;
     background: var(--serviceInk);
-}
-.finalContact .sectionEyebrow {
-    color: var(--serviceGold);
-}
-.finalContact h2 {
-    max-width: 58rem;
-    font-size: clamp(1.8rem, 3.4vw, 3rem);
-    font-weight: 400;
-    line-height: 1.25;
-    text-wrap: balance;
+    color: #fff;
 }
 .finalContact .textLink {
-    display: inline-block;
-    margin-top: 2rem;
     color: var(--serviceGold);
-    font-size: 1.2rem;
-    transition: .2s;
+    text-decoration-color: currentColor;
 }
-.finalContact .textLink:hover {
-    color: white;
-}
-.finalContact a:focus-visible {
+.finalContact a:focus-visible, .servicesPage .siteFooter a:focus-visible {
     outline-color: var(--serviceGold);
 }
-
-@media (max-width: 1100px) {
-    .initialContainerServices { background-image: linear-gradient(90deg, rgb(247 247 245 / 95%), rgb(247 247 245 / 30%)), url(../images/images-services/backgroundServices.png); }
-    .methodSteps { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem 0; }
-    .descDesc { gap: .75rem; }
-    .descDescImg img { width: 2.75rem; height: 2.75rem; }
+@media (max-width: 900px) {
+    .methodSteps {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 }
 @media (max-width: 760px) {
-    .initialContainerServices { margin-top: 0; min-height: 0; background-position: 65% top; background-image: linear-gradient(90deg, rgb(247 247 245 / 97%), rgb(247 247 245 / 82%)), url(../images/images-services/backgroundServices.png); }
-    .initialContentServices { padding-top: 10rem; }
-    .initialContentServices h1 { margin-left: 0; }
-    .initialContentServices > p:last-child { font-size: 1.2rem; }
-    .initialContentServices > p:last-child br { display: none; }
-    .servicesHead { flex-wrap: wrap; }
-    .firstIdeas { flex-basis: 12rem; }
-    .serviceDesc, .serviceVistoria:nth-child(even) .serviceDesc { grid-template-columns: minmax(0, 1fr); }
-    .serviceVistoria:nth-child(even) > .serviceTitle { text-align: left; }
-    .descImg { grid-row: 1; width: min(100%, 31rem); justify-self: center; }
-    .descImg img { height: auto; aspect-ratio: 1 / 1; }
-    .serviceTitle p.serviceTitleDesc { font-size: 1.1rem; }
-    .serviceContact { margin-left: 0; }
-    .audienceGrid, .relatedProjects, .evidenceLayout, .faqLayout { grid-template-columns: minmax(0, 1fr); }
-    .relatedProjects { gap: 2.5rem; }
-    .methodSteps { grid-template-columns: minmax(0, 1fr); gap: 0; }
-    .methodSteps li { padding: 0 0 2rem 4.5rem; }
-    .methodSteps li:last-child { padding-bottom: 0; }
-    .stepNumber { position: absolute; left: 0; top: 0; padding: 0 0 .5rem; font-size: 2.5rem; }
-    .methodSteps h3 { margin-top: .4rem; }
-}
-@media (prefers-reduced-motion: reduce) {
-    *, *::before, *::after { transition: none !important; }
-    .descImg:hover, .relatedProject:hover { transform: none; }
+    .headerItens.headerTransparent.isScrolled {
+        background: rgb(36 36 36 / 97%);
+    }
+    .servicesPage .headerItens.isScrolled a:focus-visible {
+        outline-color: var(--serviceGold);
+    }
+    .initialContainerServices {
+        padding-top: calc(var(--header-height) + 2rem);
+        background-image: linear-gradient(90deg, rgb(247 247 245 / 97%), rgb(247 247 245 / 82%)), url(../images/images-services/backgroundServices.png);
+    }
+    .serviceVistoria {
+        grid-template-columns: minmax(0, 1fr);
+    }
+    .serviceVistoria:nth-child(even) .descImg, .serviceVistoria:nth-child(even) .serviceCopy {
+        grid-column: auto;
+        grid-row: auto;
+    }
 }

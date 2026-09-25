@@ -32,7 +32,7 @@
     outline-color: var(--projectsGold);
 }
 .projectsPage [id] {
-    scroll-margin-top: 7rem;
+    scroll-margin-top: calc(var(--header-height) + 1rem);
 }
 .projectsSkip {
     position: fixed;
@@ -80,7 +80,7 @@
     background: var(--projectsGold);
 }
 .projectsHero {
-    padding-block: clamp(10rem, 13vw, 12rem) clamp(3rem, 6vw, 6rem);
+    padding-block: calc(var(--header-height) + 3rem) 3rem;
     color: #fff;
     background: var(--projectsInk);
 }
@@ -105,19 +105,13 @@
     margin-top: 1.25rem;
     text-decoration-color: var(--projectsGold);
 }
-.projectsIntro {
-    display: grid;
-    grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
-    gap: clamp(2rem, 5vw, 5rem);
-}
-.projectsIntro p {
-    color: var(--projectsMuted);
-}
-.projectsIntro p + p {
-    margin-top: 1rem;
-}
 .projectType {
     color: var(--projectsMuted);
+}
+.projectSummary {
+    margin-block: .75rem 1rem;
+    color: var(--projectsMuted);
+    font-size: .95rem;
 }
 .projectsTextLink {
     display: inline-block;
@@ -408,17 +402,13 @@
 
 @media (max-width: 760px) {
     .projectsPage [id] {
-        scroll-margin-top: 9rem;
+        scroll-margin-top: calc(var(--header-height) + 1rem);
     }
     .projectsHero {
-        padding-top: 11rem;
+        padding-top: calc(var(--header-height) + 2rem);
     }
     .projectsHero h1 {
         font-size: clamp(2.5rem, 8.5vw, 3.5rem);
-    }
-    .projectsIntro {
-        grid-template-columns: minmax(0, 1fr);
-        gap: 2rem;
     }
     .projectsGrid, .dialogDetails, .projectGallery {
         grid-template-columns: minmax(0, 1fr);
