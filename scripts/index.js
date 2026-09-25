@@ -5,10 +5,15 @@ document.querySelectorAll('.problem').forEach((card) => {
     const descricao = card.querySelector('.problemDescription');
     let fixado = false;
 
+    descricao.hidden = false;
+    descricao.inert = true;
+    descricao.setAttribute('aria-hidden', 'true');
+
     function mostrar(aberto) {
         card.classList.toggle('ativo', aberto);
         botao.setAttribute('aria-expanded', String(aberto));
-        descricao.hidden = !aberto;
+        descricao.inert = !aberto;
+        descricao.setAttribute('aria-hidden', String(!aberto));
     }
 
     botao.addEventListener('click', () => {
