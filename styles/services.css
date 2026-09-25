@@ -91,6 +91,15 @@
     line-height: 1.7;
     font-size: 1.1rem;
 }
+.serviceSpecialties {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: .5rem 1.75rem;
+    margin-top: 1.25rem;
+    padding-left: 1.1rem;
+    color: var(--serviceMuted);
+    line-height: 1.6;
+}
 .serviceDetails {
     margin-top: 1.5rem;
     border-block: 1px solid var(--serviceLine);
@@ -176,6 +185,9 @@
     outline-color: var(--serviceGold);
 }
 @media (max-width: 900px) {
+    .serviceSpecialties {
+        grid-template-columns: minmax(0, 1fr);
+    }
     .methodSteps {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }

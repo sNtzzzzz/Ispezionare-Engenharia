@@ -34,19 +34,6 @@
 .projectsPage [id] {
     scroll-margin-top: calc(var(--header-height) + 1rem);
 }
-.projectsSkip {
-    position: fixed;
-    z-index: 1100;
-    top: .5rem;
-    left: .5rem;
-    padding: .75rem 1rem;
-    background: var(--projectsGold);
-    color: var(--projectsInk);
-    transform: translateY(-160%);
-}
-.projectsSkip:focus {
-    transform: translateY(0);
-}
 .projectsContainer {
     width: min(100% - 2 * var(--projectsGutter), 1200px);
     margin-inline: auto;
